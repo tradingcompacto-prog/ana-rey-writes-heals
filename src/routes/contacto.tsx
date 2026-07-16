@@ -72,12 +72,12 @@ function Contacto() {
 
         <div className="mt-8 rounded-2xl border border-primary/25 bg-primary/5 p-6 text-sm leading-relaxed">
           <p className="font-display text-lg text-primary">
-            No gestiono citas de fisioterapia por la web.
+            Esta web no gestiona citas de fisioterapia.
           </p>
           <p className="mt-2 text-muted-foreground">
-            Si buscas atención clínica, la vía correcta es contactar
-            directamente con el centro donde ejerzo. Aquí solo respondo
-            consultas sobre los libros o dudas concretas.
+            Atiendo en el Hospital Universitario de Ginebra. Pero si tienes una
+            pregunta, quieres hablar de mis libros como Mia Millery o
+            simplemente saludar, escríbeme.
           </p>
         </div>
 
