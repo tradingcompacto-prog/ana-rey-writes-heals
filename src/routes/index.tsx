@@ -2,6 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
+import {
+  AmanecerMark,
+  AmanecerDivider,
+  VinculoMark,
+  MiaMillerySignature,
+} from "@/components/brand/BrandMarks";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,9 +30,12 @@ function Index() {
       <section className="relative overflow-hidden">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1.15fr_1fr] md:items-center md:py-28">
           <div>
-            <p className="text-xs uppercase tracking-[0.28em] text-primary">
-              Ana M. Rey — Fisioterapeuta · Osteópata
-            </p>
+            <div className="flex items-center gap-4">
+              <AmanecerMark className="h-8 w-auto" />
+              <p className="text-xs uppercase tracking-[0.28em] text-primary">
+                Ana M. Rey — Fisioterapeuta · Osteópata
+              </p>
+            </div>
             <h1 className="mt-5 font-display text-5xl leading-[1.05] text-foreground md:text-6xl">
               Enseñando a entender
               <br />
@@ -55,14 +64,15 @@ function Index() {
             </div>
           </div>
           <div className="relative">
+            {/* Bloque de madera detrás del retrato — textura sutil */}
+            <div
+              className="wood-grain absolute -inset-4 -z-0 rounded-2xl opacity-90"
+              aria-hidden
+            />
             <PhotoPlaceholder
               label="Retrato profesional de Ana en consulta"
               ratio="portrait"
-              className="shadow-xl shadow-primary/10"
-            />
-            <div
-              className="absolute -bottom-6 -left-6 hidden h-32 w-32 rounded-full bg-primary/10 md:block"
-              aria-hidden
+              className="relative shadow-xl shadow-primary/10"
             />
           </div>
         </div>
@@ -71,6 +81,7 @@ function Index() {
       {/* Descubrimiento: los dos mundos */}
       <section className="border-y border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-6xl px-6 py-20">
+          <AmanecerDivider connector="vinculo" label="Vínculo · dos mundos que se unen" className="mb-10" />
           <div className="mb-14 max-w-2xl">
             <p className="text-xs uppercase tracking-[0.28em] text-primary">
               Dos mundos, una misma mirada
@@ -114,11 +125,14 @@ function Index() {
 
       {/* Lema / cita */}
       <section className="mx-auto max-w-4xl px-6 py-24 text-center">
-        <p className="text-xs uppercase tracking-[0.28em] text-primary">Lema</p>
-        <blockquote className="mt-6 font-display text-3xl leading-snug text-foreground md:text-4xl">
-          “Enseñando a entender y cuidar el cuerpo desde el nacimiento.”
+        <AmanecerMark className="mx-auto h-14 w-auto" />
+        <blockquote className="mt-8 font-display text-3xl leading-snug text-foreground md:text-4xl">
+          <span className="italic">Entender</span> para{" "}
+          <span className="italic">cuidar.</span>
         </blockquote>
-        <p className="mt-4 text-sm text-muted-foreground">— Ana M. Rey</p>
+        <p className="mt-6 font-display text-lg italic text-primary/80">
+          Claridad y luz, siempre.
+        </p>
       </section>
 
       <Newsletter variant="garnet" />
@@ -141,6 +155,7 @@ function WorldCard({
   to: "/fisioterapeuta" | "/no-ficcion" | "/mia-millery";
   accent?: boolean;
 }) {
+  const isMia = to === "/mia-millery";
   return (
     <Link
       to={to}
@@ -154,7 +169,11 @@ function WorldCard({
         <p className="text-[10px] uppercase tracking-[0.28em] text-primary/80">
           {eyebrow}
         </p>
-        <h3 className="mt-3 font-display text-2xl">{title}</h3>
+        {isMia ? (
+          <MiaMillerySignature as="h2" className="mt-3 text-4xl leading-none" />
+        ) : (
+          <h3 className="mt-3 font-display text-2xl">{title}</h3>
+        )}
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {body}
         </p>
