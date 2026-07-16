@@ -86,6 +86,26 @@ function Fisio() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <p className="text-xs uppercase tracking-[0.28em] text-primary">
+          Formación
+        </p>
+        <h2 className="mt-4 max-w-3xl font-display text-3xl md:text-4xl">
+          Lo que he estudiado para acompañar mejor.
+        </h2>
+        <div className="mt-12 grid gap-4 md:grid-cols-2">
+          {TRAINING.map((t) => (
+            <div
+              key={t.school}
+              className="rounded-2xl border border-border bg-background p-6"
+            >
+              <p className="font-display text-lg text-primary">{t.title}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{t.school}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Cómo trabajo */}
       <section className="mx-auto max-w-4xl px-6 py-20 text-center">
         <p className="text-xs uppercase tracking-[0.28em] text-primary">
@@ -164,6 +184,29 @@ const SPECIALTIES = [
   {
     title: "Adultos",
     body: "Trato la rehabilitación neurológica, el control postural, el dolor crónico y el trabajo osteopático integrativo.",
+  },
+];
+
+const TRAINING = [
+  {
+    title: "Fisioterapia",
+    school: "Universidade da Coruña (UDC)",
+  },
+  {
+    title: "Osteopatía",
+    school: "Escuela del Concepto Osteopático",
+  },
+  {
+    title: "Hypnoparto",
+    school: "Hypnobirthing Método Mongan",
+  },
+  {
+    title: "Reeducación del suelo pélvico",
+    school: "Instituto de pelviperineología de París",
+  },
+  {
+    title: "Control postural y Concepto Bobath",
+    school: "Hospital Universitario de Ginebra (HUG)",
   },
 ];
 
