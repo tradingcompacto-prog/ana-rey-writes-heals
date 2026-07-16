@@ -33,16 +33,16 @@ function NoFiccion() {
           <div>
             <AmanecerMark className="h-10 w-auto" />
             <p className="mt-6 text-xs uppercase tracking-[0.28em] text-primary">
-              Ana M. Rey — No ficción
+              No ficción
             </p>
             <h1 className="mt-5 font-display text-4xl leading-tight md:text-6xl">
-              Escribir para explicar
+              Escribo para explicar
               <br /> lo que veo en la consulta.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
               Cuentos y ensayo firmados con el mismo nombre con el que atiendo:
-              porque nacen del mismo trabajo, del mismo cuidado, de la misma
-              mirada al neurodesarrollo.
+              porque nacen de mi trabajo, de mi cuidado, de mi mirada al
+              neurodesarrollo.
             </p>
           </div>
           <div className="relative">
