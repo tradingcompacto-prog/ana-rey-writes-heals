@@ -66,8 +66,8 @@ function Contacto() {
           Escríbeme.
         </h1>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          Este formulario es para consultas sobre los libros, prensa o dudas
-          puntuales. Léelo con calma:
+          Este formulario es para que me escribas sobre los libros, prensa o
+          dudas puntuales. Léelo con calma:
         </p>
 
         <div className="mt-8 rounded-2xl border border-primary/25 bg-primary/5 p-6 text-sm leading-relaxed">
