@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as NoFiccionRouteImport } from './routes/no-ficcion'
 import { Route as MiaMilleryRouteImport } from './routes/mia-millery'
 import { Route as FisioterapeutaRouteImport } from './routes/fisioterapeuta'
+import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as IndexRouteImport } from './routes/index'
 
 const NoFiccionRoute = NoFiccionRouteImport.update({
@@ -29,6 +30,11 @@ const FisioterapeutaRoute = FisioterapeutaRouteImport.update({
   path: '/fisioterapeuta',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactoRoute = ContactoRouteImport.update({
+  id: '/contacto',
+  path: '/contacto',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -37,12 +43,14 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contacto': typeof ContactoRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
   '/mia-millery': typeof MiaMilleryRoute
   '/no-ficcion': typeof NoFiccionRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contacto': typeof ContactoRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
   '/mia-millery': typeof MiaMilleryRoute
   '/no-ficcion': typeof NoFiccionRoute
@@ -50,20 +58,33 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contacto': typeof ContactoRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
   '/mia-millery': typeof MiaMilleryRoute
   '/no-ficcion': typeof NoFiccionRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/fisioterapeuta' | '/mia-millery' | '/no-ficcion'
+  fullPaths:
+    | '/'
+    | '/contacto'
+    | '/fisioterapeuta'
+    | '/mia-millery'
+    | '/no-ficcion'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/fisioterapeuta' | '/mia-millery' | '/no-ficcion'
-  id: '__root__' | '/' | '/fisioterapeuta' | '/mia-millery' | '/no-ficcion'
+  to: '/' | '/contacto' | '/fisioterapeuta' | '/mia-millery' | '/no-ficcion'
+  id:
+    | '__root__'
+    | '/'
+    | '/contacto'
+    | '/fisioterapeuta'
+    | '/mia-millery'
+    | '/no-ficcion'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactoRoute: typeof ContactoRoute
   FisioterapeutaRoute: typeof FisioterapeutaRoute
   MiaMilleryRoute: typeof MiaMilleryRoute
   NoFiccionRoute: typeof NoFiccionRoute
@@ -92,6 +113,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FisioterapeutaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contacto': {
+      id: '/contacto'
+      path: '/contacto'
+      fullPath: '/contacto'
+      preLoaderRoute: typeof ContactoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -104,6 +132,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactoRoute: ContactoRoute,
   FisioterapeutaRoute: FisioterapeutaRoute,
   MiaMilleryRoute: MiaMilleryRoute,
   NoFiccionRoute: NoFiccionRoute,
