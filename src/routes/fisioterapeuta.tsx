@@ -86,6 +86,22 @@ function Fisio() {
         </div>
       </section>
 
+      {/* Cómo trabajo */}
+      <section className="mx-auto max-w-4xl px-6 py-20 text-center">
+        <p className="text-xs uppercase tracking-[0.28em] text-primary">
+          Cómo trabajo
+        </p>
+        <blockquote className="mt-6 font-display text-2xl leading-snug text-foreground md:text-3xl">
+          “No es todo blanco o negro.
+          <br className="hidden sm:block" /> Yo doy la información, y luego
+          cada uno decide.”
+        </blockquote>
+        <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          Mi trabajo no es imponer un camino, sino explicar lo que veo para que
+          cada familia o persona pueda tomar decisiones con criterio.
+        </p>
+      </section>
+
       <section className="mx-auto max-w-6xl px-6 py-20">
         <AmanecerDivider connector="abrigo" label="Abrigo · el gesto que cobija" className="mb-10" />
         <div className="grid gap-14 md:grid-cols-[1.1fr_1fr] md:items-start">
