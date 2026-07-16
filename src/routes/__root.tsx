@@ -200,17 +200,17 @@ function SiteFooter() {
         <div className="text-sm">
           <p className="mb-3 font-medium text-foreground">Navegación</p>
           <ul className="space-y-2 text-muted-foreground">
-            <li><Link to="/fisioterapeuta" className="hover:text-primary">Ana M. Rey — Fisioterapeuta</Link></li>
-            <li><Link to="/no-ficcion" className="hover:text-primary">Ana M. Rey — No ficción</Link></li>
-            <li><Link to="/mia-millery" className="hover:text-primary">Mia Millery — Ficción adulta</Link></li>
+            <li><Link to="/fisioterapeuta" className="hover:text-primary">Fisioterapeuta</Link></li>
+            <li><Link to="/no-ficcion" className="hover:text-primary">No ficción</Link></li>
+            <li><Link to="/mia-millery" className="hover:text-primary">Mia Millery</Link></li>
             <li><Link to="/contacto" className="hover:text-primary">Contacto</Link></li>
           </ul>
         </div>
         <div className="text-sm text-muted-foreground">
           <p className="mb-3 font-medium text-foreground">Nota</p>
           <p>
-            Las citas clínicas no se gestionan desde esta web. Esta página es
-            carta de presentación profesional y espacio literario.
+            No gestiono citas clínicas desde esta web. Esta página es mi carta
+            de presentación profesional y espacio literario.
           </p>
         </div>
       </div>

@@ -33,16 +33,16 @@ function NoFiccion() {
           <div>
             <AmanecerMark className="h-10 w-auto" />
             <p className="mt-6 text-xs uppercase tracking-[0.28em] text-primary">
-              Ana M. Rey — No ficción
+              No ficción
             </p>
             <h1 className="mt-5 font-display text-4xl leading-tight md:text-6xl">
-              Escribir para explicar
+              Escribo para explicar
               <br /> lo que veo en la consulta.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
               Cuentos y ensayo firmados con el mismo nombre con el que atiendo:
-              porque nacen del mismo trabajo, del mismo cuidado, de la misma
-              mirada al neurodesarrollo.
+              porque nacen de mi trabajo, de mi cuidado, de mi mirada al
+              neurodesarrollo.
             </p>
           </div>
           <div className="relative">
@@ -117,8 +117,8 @@ function NoFiccion() {
             </h2>
             <p className="mt-4 text-muted-foreground">
               Un ensayo divulgativo para familias y profesionales, con lo que
-              Ana quiere que se sepa desde el nacimiento sobre cómo se aprende
-              a moverse.
+              quiero que se sepa desde el nacimiento sobre cómo se aprende a
+              moverse.
             </p>
             <p className="mt-3 text-sm text-primary">
               Publicación prevista — próximamente.
@@ -130,7 +130,7 @@ function NoFiccion() {
       <Newsletter
         variant="garnet"
         title="Cartas desde el barco"
-        description="Novedades de la colección, lecturas y avances del libro en curso. Directo desde el escritorio de Ana."
+        description="Novedades de la colección, lecturas y avances del libro en curso. Directo desde mi escritorio."
       />
     </>
   );

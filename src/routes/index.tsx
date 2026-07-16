@@ -32,19 +32,19 @@ function Index() {
             <div className="flex items-center gap-4">
               <AmanecerMark className="h-8 w-auto" />
               <p className="text-xs uppercase tracking-[0.28em] text-primary">
-                Ana M. Rey — Fisioterapeuta · Osteópata
+                Fisioterapeuta · Osteópata
               </p>
             </div>
             <h1 className="mt-5 font-display text-5xl leading-[1.05] text-foreground md:text-6xl">
-              Enseñando a entender
+              Enseño a entender
               <br />
               y cuidar el cuerpo
               <br />
               <span className="text-primary">desde el nacimiento.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-              16 años de práctica clínica especializada en control postural y
-              neurodesarrollo — bebés, niños y adultos. Actualmente en el
+              Llevo 16 años de práctica clínica especializada en control postural
+              y neurodesarrollo — bebés, niños y adultos. Actualmente en el
               Hospital Universitario de Ginebra (HUG).
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -52,13 +52,13 @@ function Index() {
                 to="/fisioterapeuta"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
-                Conocer su trabajo clínico
+                Conocer mi trabajo clínico
               </Link>
               <Link
                 to="/contacto"
                 className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
               >
-                Escribir a Ana
+                Escribirme
               </Link>
             </div>
           </div>
@@ -129,12 +129,11 @@ function Index() {
             Dos mundos, una misma mirada
           </p>
           <h2 className="mt-4 font-display text-3xl md:text-4xl">
-            La consulta y los libros conviven en la misma persona.
+            La consulta y los libros conviven en mí.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Todo lo que Ana escribe nace de lo que ve cada semana en la
-            consulta: cómo un cuerpo aprende a sostenerse, a moverse, a estar
-            en el mundo.
+            Todo lo que escribo nace de lo que veo cada semana en la consulta:
+            cómo aprendemos a sostenernos, a movernos, a estar en el mundo.
           </p>
         </div>
 
@@ -142,22 +141,22 @@ function Index() {
           <WorldCard
             eyebrow="Ana M. Rey"
             title="Fisioterapeuta"
-            body="Control postural y neurodesarrollo, para bebés, niños y adultos. Hospital Universitario de Ginebra."
-            cta="Ver trayectoria clínica"
+            body="Trabajo el control postural y el neurodesarrollo con bebés, niños y adultos. Actualmente en el Hospital Universitario de Ginebra (HUG)."
+            cta="Ver mi trayectoria clínica"
             to="/fisioterapeuta"
             accent
           />
           <WorldCard
             eyebrow="Ana M. Rey"
             title="No ficción e infantil"
-            body="La colección El Barco de los Amigos y un ensayo en curso sobre desarrollo motor infantil."
+            body="Escribo la colección El Barco de los Amigos y un ensayo en curso sobre desarrollo motor infantil."
             cta="Descubrir los libros"
             to="/no-ficcion"
           />
           <WorldCard
             eyebrow="Pseudónimo · ficción adulta"
             title="Ficción adulta"
-            body="Un heterónimo para novela adulta. Espacio propio, tono propio."
+            body="Uso un heterónimo para mi ficción adulta. Espacio propio, tono propio."
             cta="Entrar en Mia Millery"
             to="/mia-millery"
           />

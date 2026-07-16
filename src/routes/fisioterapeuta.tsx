@@ -40,11 +40,11 @@ function Fisio() {
             <div className="flex items-center gap-4">
               <AmanecerMark className="h-8 w-auto" />
               <p className="text-xs uppercase tracking-[0.28em] text-primary">
-                Ana M. Rey · Fisioterapeuta · Osteópata
+                Fisioterapeuta · Osteópata
               </p>
             </div>
             <h1 className="mt-5 font-display text-4xl leading-tight md:text-5xl">
-              Una mirada al cuerpo que empieza en la cuna.
+              Mi mirada al cuerpo empieza en la cuna.
             </h1>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Desde hace 16 años acompaño a familias y pacientes a entender cómo
@@ -84,6 +84,22 @@ function Fisio() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Cómo trabajo */}
+      <section className="mx-auto max-w-4xl px-6 py-20 text-center">
+        <p className="text-xs uppercase tracking-[0.28em] text-primary">
+          Cómo trabajo
+        </p>
+        <blockquote className="mt-6 font-display text-2xl leading-snug text-foreground md:text-3xl">
+          “No es todo blanco o negro.
+          <br className="hidden sm:block" /> Yo doy la información, y luego
+          cada uno decide.”
+        </blockquote>
+        <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          Mi trabajo no es imponer un camino, sino explicar lo que veo para que
+          cada familia o persona pueda tomar decisiones con criterio.
+        </p>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
@@ -130,7 +146,7 @@ function Fisio() {
 
       <Newsletter
         title="Notas desde la consulta"
-        description="Reflexiones breves sobre desarrollo motor, postura y crianza. Escritas por Ana, sin tecnicismos innecesarios."
+        description="Reflexiones breves sobre desarrollo motor, postura y crianza. Escritas por mí, sin tecnicismos innecesarios."
       />
     </>
   );
@@ -139,15 +155,15 @@ function Fisio() {
 const SPECIALTIES = [
   {
     title: "Bebés y primera infancia",
-    body: "Acompañamiento del desarrollo motor temprano, plagiocefalias, tortícolis, retrasos madurativos y dificultades de sostén.",
+    body: "Acompaño el desarrollo motor temprano, plagiocefalias, tortícolis, retrasos madurativos y dificultades de sostén.",
   },
   {
     title: "Niños y adolescentes",
-    body: "Trastornos del neurodesarrollo, coordinación, tono muscular y postura en la etapa escolar.",
+    body: "Abordo trastornos del neurodesarrollo, coordinación, tono muscular y postura en la etapa escolar.",
   },
   {
     title: "Adultos",
-    body: "Rehabilitación neurológica, control postural, dolor crónico y trabajo osteopático integrativo.",
+    body: "Trato la rehabilitación neurológica, el control postural, el dolor crónico y el trabajo osteopático integrativo.",
   },
 ];
 
@@ -155,16 +171,16 @@ const TIMELINE = [
   {
     year: "Actualidad",
     title: "Hospital Universitario de Ginebra (HUG)",
-    body: "Práctica clínica integrada en un entorno hospitalario multidisciplinar.",
+    body: "Integro mi práctica clínica en un entorno hospitalario multidisciplinar.",
   },
   {
     year: "Formación continua",
     title: "Osteopatía y neurodesarrollo",
-    body: "Formación específica en abordajes centrados en el sistema nervioso central y el desarrollo motor infantil.",
+    body: "Me formo específicamente en abordajes centrados en el sistema nervioso central y el desarrollo motor infantil.",
   },
   {
     year: "+16 años",
     title: "Práctica clínica",
-    body: "Trayectoria continuada tratando a familias, bebés, niños y adultos.",
+    body: "Llevo más de 16 años de trayectoria continuada tratando a familias, bebés, niños y adultos.",
   },
 ];
