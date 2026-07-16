@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
 import { MiaMillerySignature, AmanecerDivider } from "@/components/brand/BrandMarks";
 import anaMia from "@/assets/ana-escritora-3.png.asset.json";
