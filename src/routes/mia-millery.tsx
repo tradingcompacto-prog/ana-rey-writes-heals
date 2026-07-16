@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
+import { MiaMillerySignature, AmanecerDivider } from "@/components/brand/BrandMarks";
 
 export const Route = createFileRoute("/mia-millery")({
   head: () => ({
@@ -24,15 +25,17 @@ export const Route = createFileRoute("/mia-millery")({
 function Mia() {
   return (
     <>
-      <section className="border-b border-border/60">
+      <section className="relative overflow-hidden border-b border-border/60">
+        <div className="wood-grain absolute inset-0 opacity-70" aria-hidden />
         <div className="mx-auto grid max-w-6xl gap-14 px-6 py-24 md:grid-cols-[1.1fr_1fr] md:items-center">
-          <div>
+          <div className="relative">
             <p className="text-xs uppercase tracking-[0.28em] text-primary">
               Heterónimo · Ficción adulta
             </p>
-            <h1 className="mt-5 font-display text-5xl leading-tight md:text-6xl">
-              Mia Millery.
-            </h1>
+            <MiaMillerySignature
+              as="h1"
+              className="mt-6 block text-[4.5rem] leading-none md:text-[7rem]"
+            />
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
               Bajo este nombre Ana firma su ficción adulta. Un espacio propio,
               con voz propia — separado de la consulta clínica y de la no
@@ -46,12 +49,14 @@ function Mia() {
           <PhotoPlaceholder
             label="Retrato editorial de Mia Millery"
             ratio="portrait"
+            className="relative"
           />
         </div>
       </section>
 
       <section className="bg-secondary/40">
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">
+          <AmanecerDivider connector="calma" label="Calma" className="mb-6" />
           <p className="text-xs uppercase tracking-[0.28em] text-primary">
             Obra
           </p>

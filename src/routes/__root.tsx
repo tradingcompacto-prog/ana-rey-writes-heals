@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { AmanecerMark, IsotipoA } from "@/components/brand/BrandMarks";
 
 function NotFoundComponent() {
   return (
@@ -103,7 +104,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Allura&display=swap",
       },
     ],
   }),
@@ -156,8 +157,11 @@ function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link to="/" className="font-display text-xl tracking-tight text-primary">
-          Ana Muiño
+        <Link to="/" className="flex items-center gap-2.5">
+          <IsotipoA className="text-2xl" />
+          <span className="font-display text-lg tracking-tight text-primary">
+            Ana&nbsp;M.&nbsp;Rey
+          </span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           <Link to="/" activeOptions={{ exact: true }} activeProps={{ className: activeCls }} className={linkBase}>
@@ -186,10 +190,15 @@ function SiteFooter() {
     <footer className="border-t border-border/70 bg-secondary/40">
       <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
         <div>
-          <p className="font-display text-lg text-primary">Ana Muiño</p>
+          <div className="flex items-center gap-3">
+            <AmanecerMark className="h-8 w-auto" />
+            <p className="font-display text-lg text-primary">Ana&nbsp;M.&nbsp;Rey</p>
+          </div>
           <p className="mt-2 text-sm text-muted-foreground">
-            Fisioterapeuta y escritora. Enseñando a entender y cuidar el cuerpo
-            desde el nacimiento.
+            Fisioterapeuta · osteópata · escritora.
+          </p>
+          <p className="mt-3 font-display italic text-primary/80">
+            Claridad y luz, siempre.
           </p>
         </div>
         <div className="text-sm">

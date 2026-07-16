@@ -64,18 +64,23 @@
   --color-sand: var(--sand);
   --color-cream: var(--cream);
   --color-ink: var(--ink);
+  --color-terracotta: var(--terracotta);
+  --color-storm: var(--storm);
   --font-display: "Playfair Display", ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Allura", "Playfair Display", cursive;
 }
 
 :root {
   --radius: 0.5rem;
   /* Brand palette */
-  --garnet: oklch(0.42 0.13 18);        /* #8B1A2E principal */
-  --garnet-deep: oklch(0.38 0.11 17);   /* #7C2B39 */
-  --sand: oklch(0.9 0.03 78);           /* arena / beige cálido */
-  --cream: oklch(0.98 0.012 85);        /* blanco crema */
-  --ink: oklch(0.18 0.01 60);           /* negro contraste cálido */
+  --garnet: oklch(0.42 0.13 18);        /* #7C2B39 principal */
+  --garnet-deep: oklch(0.30 0.10 20);   /* #4C1A21 texto / fuerza */
+  --sand: oklch(0.86 0.045 78);         /* #DBC7A8 arena / soporte */
+  --cream: oklch(0.97 0.018 85);        /* #FBF5EC blanco cálido */
+  --ink: oklch(0.18 0.01 60);
+  --terracotta: oklch(0.66 0.12 42);    /* #C0714E acento cálido */
+  --storm: oklch(0.62 0.02 240);        /* #79858E gris tormenta */
 
   --background: var(--cream);
   --foreground: var(--ink);
@@ -163,4 +168,28 @@
     font-weight: 600;
     letter-spacing: -0.01em;
   }
+}
+
+/* Textura "grano de madera" en beige — cálida, sin ruido */
+@utility wood-grain {
+  background-color: var(--sand);
+  background-image:
+    repeating-linear-gradient(
+      92deg,
+      color-mix(in oklab, var(--garnet-deep) 6%, transparent) 0 1px,
+      transparent 1px 6px,
+      color-mix(in oklab, var(--terracotta) 4%, transparent) 6px 7px,
+      transparent 7px 14px
+    ),
+    radial-gradient(
+      120% 60% at 20% 30%,
+      color-mix(in oklab, var(--cream) 40%, transparent),
+      transparent 60%
+    );
+}
+
+@utility font-script {
+  font-family: var(--font-script);
+  font-weight: 400;
+  letter-spacing: 0;
 }
