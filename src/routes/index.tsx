@@ -113,34 +113,65 @@ function Index() {
         </div>
       </section>
 
-      {/* Mi propósito */}
+      {/* Mi propósito — frase suelta */}
+      <section className="mx-auto max-w-4xl px-6 py-16 text-center">
+        <p className="font-display text-2xl leading-snug text-foreground md:text-3xl">
+          Mi propósito es hacer que el conocimiento del cuerpo sea accesible
+          para todas las personas, en todas las etapas de la vida.
+        </p>
+      </section>
+
+      {/* Quién soy */}
       <section className="border-y border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          {/* Marca gráfica grande, sin texto, como horizonte de sección */}
-          <div className="mb-12 flex items-center gap-6">
-            <div className="h-px flex-1 bg-border" />
-            <CalmaMark className="h-16 w-auto md:h-24" />
-            <div className="h-px flex-1 bg-border" />
+          <div className="mb-12 text-center">
+            <p className="text-xs uppercase tracking-[0.28em] text-primary">
+              Sobre mí
+            </p>
+            <h2 className="mt-4 font-display text-3xl md:text-4xl">
+              Quién soy
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              La fisio que conecta el cuerpo desde el primer día de vida hasta
+              la adultez
+            </p>
           </div>
 
-          <div className="grid gap-14 md:grid-cols-[1fr_1.25fr]">
-            <div>
-              <p className="text-xs uppercase tracking-[0.28em] text-primary">
-                Manifiesto
+          <div className="grid gap-12 md:grid-cols-[1fr_1.25fr]">
+            <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
+              <p>
+                Soy Ana Muiño, fisioterapeuta y osteópata especializada en
+                control postural y neurodesarrollo, con 16 años de práctica
+                clínica, incluyendo mi paso por el Hospital Universitario de
+                Ginebra (HUG). Acompaño a bebés, niños, mujeres embarazadas y
+                adultos en procesos de recuperación, aprendizaje y cuidado
+                corporal.
               </p>
-              <h2 className="mt-4 font-display text-3xl md:text-4xl">
-                Mi propósito
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                Hacer que el conocimiento del cuerpo sea accesible para todas
-                las personas, en todas las etapas de la vida — no solo en la
-                consulta, sino en el día a día. Democratizar el conocimiento
-                clínico que suele quedarse encerrado entre cuatro paredes.
+              <p>
+                No solo trato — enseño. Mi objetivo es que entiendas tu cuerpo y
+                el de tu familia lo suficiente como para cuidarlo con criterio
+                propio, no con miedo ni con reglas impuestas. Hablo desde la
+                evidencia y desde 16 años de experiencia real, sin alarmar y
+                sin simplificar en exceso.
+              </p>
+              <blockquote className="border-l-2 border-primary pl-6 font-display text-xl text-foreground">
+                "El cuerpo se aprende. Y se puede enseñar."
+              </blockquote>
+              <p>
+                Ejerzo en el Hospital Universitario de Ginebra — no paso
+                consulta a través de esta web, es simplemente mi carta de
+                presentación. Si tienes una duda puntual, puedes escribirme.
+              </p>
+              <p>
+                Y además de fisio, soy escritora. Fisioterapeuta y escritora —
+                no una cosa u otra. Todo lo que escribo, en consulta o en mis
+                novelas como Mia Millery, parte del mismo interés: entender el
+                cuerpo y la mente.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              {PURPOSE_PILLARS.map((p) => (
+              {ABOUT_PILLARS.map((p) => (
                 <div
                   key={p.title}
                   className="rounded-2xl border border-border bg-background p-6"
