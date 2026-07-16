@@ -37,9 +37,8 @@ function Mia() {
               className="mt-6 block text-[4.5rem] leading-none md:text-[7rem]"
             />
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-              Bajo este nombre Ana firma su ficción adulta. Un espacio propio,
-              con voz propia — separado de la consulta clínica y de la no
-              ficción.
+              Bajo este nombre firmo mi ficción adulta. Un espacio propio, con
+              voz propia — separado de la consulta clínica y de la no ficción.
             </p>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
               Novelas en las que caben el deseo, la memoria y las decisiones
