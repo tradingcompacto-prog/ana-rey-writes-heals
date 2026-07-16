@@ -178,6 +178,25 @@ function Index() {
   );
 }
 
+const PURPOSE_PILLARS = [
+  {
+    title: "El cuerpo se aprende",
+    body: "Neurodesarrollo desde el nacimiento.",
+  },
+  {
+    title: "Todo conecta",
+    body: "Postura, cerebro, parto y suelo pélvico — un mismo sistema.",
+  },
+  {
+    title: "El postparto es fisioterapia",
+    body: "El cuerpo de la madre también merece atención.",
+  },
+  {
+    title: "Entender cambia decisiones",
+    body: "No se trata de hacer más, sino de saber por qué.",
+  },
+];
+
 function WorldCard({
   eyebrow,
   title,
