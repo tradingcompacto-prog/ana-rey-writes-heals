@@ -113,7 +113,7 @@ function Index() {
               to="/no-ficcion"
             />
             <WorldCard
-              eyebrow="Mia Millery"
+              eyebrow="Pseudónimo · ficción adulta"
               title="Ficción adulta"
               body="Un heterónimo para novela adulta. Espacio propio, tono propio."
               cta="Entrar en Mia Millery"
