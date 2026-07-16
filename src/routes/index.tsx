@@ -122,42 +122,28 @@ function Index() {
         </div>
       </section>
 
-      {/* Descubrimiento: los dos mundos */}
+      {/* Mis dos mundos */}
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="mb-14 max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.28em] text-primary">
-            Dos mundos, una misma mirada
-          </p>
-          <h2 className="mt-4 font-display text-3xl md:text-4xl">
-            La consulta y los libros conviven en mí.
-          </h2>
-          <p className="mt-4 text-muted-foreground">
-            Todo lo que escribo nace de lo que veo cada semana en la consulta:
-            cómo aprendemos a sostenernos, a movernos, a estar en el mundo.
-          </p>
+        <div className="mb-14 flex items-center gap-6">
+          <div className="h-px flex-1 bg-border" />
+          <TwoWorldsIcon className="h-12 w-auto text-primary md:h-16" />
+          <div className="h-px flex-1 bg-border" />
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           <WorldCard
-            eyebrow="Ana M. Rey"
-            title="Fisioterapeuta"
-            body="Trabajo el control postural y el neurodesarrollo con bebés, niños y adultos. Actualmente en el Hospital Universitario de Ginebra (HUG)."
-            cta="Ver mi trayectoria clínica"
+            eyebrow="Mundo 01"
+            title="La fisioterapeuta"
+            body="Control postural y neurodesarrollo, con 16 años de trayectoria clínica en el Hospital Universitario de Ginebra. Atiendo en el hospital — aquí comparto quién soy y a qué me dedico."
+            cta="Conocer mi trayectoria"
             to="/fisioterapeuta"
             accent
           />
           <WorldCard
-            eyebrow="Ana M. Rey"
-            title="No ficción e infantil"
-            body="Escribo la colección El Barco de los Amigos y un ensayo en curso sobre desarrollo motor infantil."
-            cta="Descubrir los libros"
-            to="/no-ficcion"
-          />
-          <WorldCard
-            eyebrow="Pseudónimo · ficción adulta"
-            title="Ficción adulta"
-            body="Uso un heterónimo para mi ficción adulta. Espacio propio, tono propio."
-            cta="Entrar en Mia Millery"
+            eyebrow="Mundo 02 · ¿Sabías esto?"
+            title="También soy escritora"
+            body="Como Mia Millery escribo ficción — thrillers psicológicos con mucho de resiliencia y de todo lo que no se dice en voz alta. La misma curiosidad por la mente, contada de otra forma."
+            cta="Descubrir mis libros"
             to="/mia-millery"
           />
         </div>
