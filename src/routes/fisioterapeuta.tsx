@@ -187,6 +187,29 @@ const SPECIALTIES = [
   },
 ];
 
+const TRAINING = [
+  {
+    title: "Fisioterapia",
+    school: "Universidade da Coruña (UDC)",
+  },
+  {
+    title: "Osteopatía",
+    school: "Escuela del Concepto Osteopático",
+  },
+  {
+    title: "Hypnoparto",
+    school: "Hypnobirthing Método Mongan",
+  },
+  {
+    title: "Reeducación del suelo pélvico",
+    school: "Instituto de pelviperineología de París",
+  },
+  {
+    title: "Control postural y Concepto Bobath",
+    school: "Hospital Universitario de Ginebra (HUG)",
+  },
+];
+
 const TIMELINE = [
   {
     year: "Actualidad",
