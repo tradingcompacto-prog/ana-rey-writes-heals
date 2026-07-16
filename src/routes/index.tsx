@@ -130,9 +130,6 @@ function Index() {
           <span className="italic">Entender</span> para{" "}
           <span className="italic">cuidar.</span>
         </blockquote>
-        <p className="mt-6 font-display text-lg italic text-primary/80">
-          Claridad y luz, siempre.
-        </p>
       </section>
 
       <Newsletter variant="garnet" />
