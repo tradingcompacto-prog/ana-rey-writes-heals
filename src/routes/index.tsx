@@ -4,8 +4,7 @@ import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
 import {
   AmanecerMark,
-  AmanecerDivider,
-  VinculoMark,
+  CalmaMark,
   MiaMillerySignature,
 } from "@/components/brand/BrandMarks";
 
@@ -78,48 +77,90 @@ function Index() {
         </div>
       </section>
 
-      {/* Descubrimiento: los dos mundos */}
+      {/* Mi propósito */}
       <section className="border-y border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          <AmanecerDivider connector="vinculo" label="Vínculo · dos mundos que se unen" className="mb-10" />
-          <div className="mb-14 max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.28em] text-primary">
-              Dos mundos, una misma mirada
-            </p>
-            <h2 className="mt-4 font-display text-3xl md:text-4xl">
-              La consulta y los libros conviven en la misma persona.
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              Todo lo que Ana escribe nace de lo que ve cada semana en la
-              consulta: cómo un cuerpo aprende a sostenerse, a moverse, a estar
-              en el mundo.
-            </p>
+          {/* Marca gráfica grande, sin texto, como horizonte de sección */}
+          <div className="mb-12 flex items-center gap-6">
+            <div className="h-px flex-1 bg-border" />
+            <CalmaMark className="h-16 w-auto md:h-24" />
+            <div className="h-px flex-1 bg-border" />
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            <WorldCard
-              eyebrow="Ana M. Rey"
-              title="Fisioterapeuta"
-              body="Control postural y neurodesarrollo, para bebés, niños y adultos. Hospital Universitario de Ginebra."
-              cta="Ver trayectoria clínica"
-              to="/fisioterapeuta"
-              accent
-            />
-            <WorldCard
-              eyebrow="Ana M. Rey"
-              title="No ficción e infantil"
-              body="La colección El Barco de los Amigos y un ensayo en curso sobre desarrollo motor infantil."
-              cta="Descubrir los libros"
-              to="/no-ficcion"
-            />
-            <WorldCard
-              eyebrow="Pseudónimo · ficción adulta"
-              title="Ficción adulta"
-              body="Un heterónimo para novela adulta. Espacio propio, tono propio."
-              cta="Entrar en Mia Millery"
-              to="/mia-millery"
-            />
+          <div className="grid gap-14 md:grid-cols-[1fr_1.25fr]">
+            <div>
+              <p className="text-xs uppercase tracking-[0.28em] text-primary">
+                Manifiesto
+              </p>
+              <h2 className="mt-4 font-display text-3xl md:text-4xl">
+                Mi propósito
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                Hacer que el conocimiento del cuerpo sea accesible para todas
+                las personas, en todas las etapas de la vida — no solo en la
+                consulta, sino en el día a día. Democratizar el conocimiento
+                clínico que suele quedarse encerrado entre cuatro paredes.
+              </p>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              {PURPOSE_PILLARS.map((p) => (
+                <div
+                  key={p.title}
+                  className="rounded-2xl border border-border bg-background p-6"
+                >
+                  <p className="font-display text-xl text-primary">
+                    {p.title}
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {p.body}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Descubrimiento: los dos mundos */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mb-14 max-w-2xl">
+          <p className="text-xs uppercase tracking-[0.28em] text-primary">
+            Dos mundos, una misma mirada
+          </p>
+          <h2 className="mt-4 font-display text-3xl md:text-4xl">
+            La consulta y los libros conviven en la misma persona.
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Todo lo que Ana escribe nace de lo que ve cada semana en la
+            consulta: cómo un cuerpo aprende a sostenerse, a moverse, a estar
+            en el mundo.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <WorldCard
+            eyebrow="Ana M. Rey"
+            title="Fisioterapeuta"
+            body="Control postural y neurodesarrollo, para bebés, niños y adultos. Hospital Universitario de Ginebra."
+            cta="Ver trayectoria clínica"
+            to="/fisioterapeuta"
+            accent
+          />
+          <WorldCard
+            eyebrow="Ana M. Rey"
+            title="No ficción e infantil"
+            body="La colección El Barco de los Amigos y un ensayo en curso sobre desarrollo motor infantil."
+            cta="Descubrir los libros"
+            to="/no-ficcion"
+          />
+          <WorldCard
+            eyebrow="Pseudónimo · ficción adulta"
+            title="Ficción adulta"
+            body="Un heterónimo para novela adulta. Espacio propio, tono propio."
+            cta="Entrar en Mia Millery"
+            to="/mia-millery"
+          />
         </div>
       </section>
 
@@ -136,6 +177,25 @@ function Index() {
     </>
   );
 }
+
+const PURPOSE_PILLARS = [
+  {
+    title: "El cuerpo se aprende",
+    body: "Neurodesarrollo desde el nacimiento.",
+  },
+  {
+    title: "Todo conecta",
+    body: "Postura, cerebro, parto y suelo pélvico — un mismo sistema.",
+  },
+  {
+    title: "El postparto es fisioterapia",
+    body: "El cuerpo de la madre también merece atención.",
+  },
+  {
+    title: "Entender cambia decisiones",
+    body: "No se trata de hacer más, sino de saber por qué.",
+  },
+];
 
 function WorldCard({
   eyebrow,
