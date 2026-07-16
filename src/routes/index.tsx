@@ -32,11 +32,11 @@ function Index() {
             <div className="flex items-center gap-4">
               <AmanecerMark className="h-8 w-auto" />
               <p className="text-xs uppercase tracking-[0.28em] text-primary">
-                Ana M. Rey — Fisioterapeuta · Osteópata
+                Fisioterapeuta · Osteópata
               </p>
             </div>
             <h1 className="mt-5 font-display text-5xl leading-[1.05] text-foreground md:text-6xl">
-              Enseñando a entender
+              Enseño a entender
               <br />
               y cuidar el cuerpo
               <br />
