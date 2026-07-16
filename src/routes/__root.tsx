@@ -77,14 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Ana Muiño — Fisioterapeuta y escritora" },
+      {
+        name: "description",
+        content:
+          "Ana M. Rey: fisioterapeuta especializada en control postural y neurodesarrollo. También escritora de literatura infantil y no ficción.",
+      },
+      { name: "author", content: "Ana Muiño" },
+      { property: "og:title", content: "Ana Muiño — Fisioterapeuta y escritora" },
+      {
+        property: "og:description",
+        content:
+          "Dos mundos, una misma mirada al cuerpo y a la infancia: consulta clínica y libros.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -92,6 +99,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -119,8 +132,86 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <SiteChrome>
+        <Outlet />
+      </SiteChrome>
     </QueryClientProvider>
+  );
+}
+
+function SiteChrome({ children }: { children: ReactNode }) {
+  return (
+    <div className="flex min-h-screen flex-col bg-background text-foreground">
+      <SiteHeader />
+      <main className="flex-1">{children}</main>
+      <SiteFooter />
+    </div>
+  );
+}
+
+function SiteHeader() {
+  const linkBase =
+    "text-sm text-foreground/70 hover:text-primary transition-colors";
+  const activeCls = "text-primary font-medium";
+  return (
+    <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <Link to="/" className="font-display text-xl tracking-tight text-primary">
+          Ana Muiño
+        </Link>
+        <nav className="hidden items-center gap-8 md:flex">
+          <Link to="/" activeOptions={{ exact: true }} activeProps={{ className: activeCls }} className={linkBase}>
+            Inicio
+          </Link>
+          <Link to="/fisioterapeuta" activeProps={{ className: activeCls }} className={linkBase}>
+            Fisioterapeuta
+          </Link>
+          <Link to="/no-ficcion" activeProps={{ className: activeCls }} className={linkBase}>
+            No ficción
+          </Link>
+          <Link to="/mia-millery" activeProps={{ className: activeCls }} className={linkBase}>
+            Mia Millery
+          </Link>
+          <Link to="/contacto" activeProps={{ className: activeCls }} className={linkBase}>
+            Contacto
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+}
+
+function SiteFooter() {
+  return (
+    <footer className="border-t border-border/70 bg-secondary/40">
+      <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
+        <div>
+          <p className="font-display text-lg text-primary">Ana Muiño</p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Fisioterapeuta y escritora. Enseñando a entender y cuidar el cuerpo
+            desde el nacimiento.
+          </p>
+        </div>
+        <div className="text-sm">
+          <p className="mb-3 font-medium text-foreground">Navegación</p>
+          <ul className="space-y-2 text-muted-foreground">
+            <li><Link to="/fisioterapeuta" className="hover:text-primary">Ana M. Rey — Fisioterapeuta</Link></li>
+            <li><Link to="/no-ficcion" className="hover:text-primary">Ana M. Rey — No ficción</Link></li>
+            <li><Link to="/mia-millery" className="hover:text-primary">Mia Millery — Ficción adulta</Link></li>
+            <li><Link to="/contacto" className="hover:text-primary">Contacto</Link></li>
+          </ul>
+        </div>
+        <div className="text-sm text-muted-foreground">
+          <p className="mb-3 font-medium text-foreground">Nota</p>
+          <p>
+            Las citas clínicas no se gestionan desde esta web. Esta página es
+            carta de presentación profesional y espacio literario.
+          </p>
+        </div>
+      </div>
+      <div className="border-t border-border/60 py-4 text-center text-xs text-muted-foreground">
+        © {new Date().getFullYear()} Ana Muiño. Todos los derechos reservados.
+      </div>
+    </footer>
   );
 }

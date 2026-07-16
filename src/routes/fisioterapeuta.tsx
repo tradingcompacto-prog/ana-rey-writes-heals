@@ -1,0 +1,160 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
+import { Newsletter } from "@/components/Newsletter";
+
+export const Route = createFileRoute("/fisioterapeuta")({
+  head: () => ({
+    meta: [
+      { title: "Ana M. Rey — Fisioterapeuta y osteópata" },
+      {
+        name: "description",
+        content:
+          "16 años de práctica clínica en control postural y neurodesarrollo. Bebés, niños y adultos. Hospital Universitario de Ginebra (HUG).",
+      },
+      { property: "og:title", content: "Ana M. Rey — Fisioterapeuta" },
+      {
+        property: "og:description",
+        content:
+          "Especialización en control postural y neurodesarrollo. Carta de presentación clínica.",
+      },
+    ],
+  }),
+  component: Fisio,
+});
+
+function Fisio() {
+  return (
+    <>
+      <section className="border-b border-border/60">
+        <div className="mx-auto grid max-w-6xl gap-14 px-6 py-20 md:grid-cols-[1fr_1.1fr] md:items-center">
+          <PhotoPlaceholder
+            label="Ana atendiendo en la consulta del HUG"
+            ratio="landscape"
+          />
+          <div>
+            <p className="text-xs uppercase tracking-[0.28em] text-primary">
+              Ana M. Rey · Fisioterapeuta · Osteópata
+            </p>
+            <h1 className="mt-5 font-display text-4xl leading-tight md:text-5xl">
+              Una mirada al cuerpo que empieza en la cuna.
+            </h1>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Desde hace 16 años acompaño a familias y pacientes a entender cómo
+              se construye el movimiento humano. Trabajo con bebés, niños y
+              adultos con foco en control postural y neurodesarrollo.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Actualmente ejerzo en el Hospital Universitario de Ginebra (HUG),
+              donde integro la práctica clínica con la formación continua y el
+              trabajo interdisciplinar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-secondary/40">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <p className="text-xs uppercase tracking-[0.28em] text-primary">
+            Especialización
+          </p>
+          <h2 className="mt-4 max-w-3xl font-display text-3xl md:text-4xl">
+            Control postural y neurodesarrollo, a cualquier edad.
+          </h2>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {SPECIALTIES.map((s) => (
+              <div
+                key={s.title}
+                className="rounded-2xl border border-border bg-background p-8"
+              >
+                <p className="font-display text-xl text-primary">{s.title}</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {s.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="grid gap-14 md:grid-cols-[1.1fr_1fr] md:items-start">
+          <div>
+            <p className="text-xs uppercase tracking-[0.28em] text-primary">
+              Trayectoria
+            </p>
+            <h2 className="mt-4 font-display text-3xl md:text-4xl">
+              16 años entre consulta, hospital y formación.
+            </h2>
+            <ol className="mt-10 space-y-8 border-l border-border pl-8">
+              {TIMELINE.map((t) => (
+                <li key={t.year} className="relative">
+                  <span className="absolute -left-[41px] top-1.5 h-3 w-3 rounded-full bg-primary" />
+                  <p className="font-display text-lg">{t.title}</p>
+                  <p className="text-xs uppercase tracking-widest text-primary/80">
+                    {t.year}
+                  </p>
+                  <p className="mt-2 text-sm text-muted-foreground">{t.body}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div className="space-y-6">
+            <PhotoPlaceholder label="Detalle de trabajo con un bebé" ratio="square" />
+            <div className="rounded-2xl border border-primary/25 bg-primary/5 p-6 text-sm leading-relaxed text-foreground">
+              <p className="font-display text-lg text-primary">Nota importante</p>
+              <p className="mt-2 text-muted-foreground">
+                Esta página es una carta de presentación profesional. Las citas
+                clínicas no se gestionan a través de la web.
+              </p>
+              <Link
+                to="/contacto"
+                className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+              >
+                Contactar para dudas puntuales →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Newsletter
+        title="Notas desde la consulta"
+        description="Reflexiones breves sobre desarrollo motor, postura y crianza. Escritas por Ana, sin tecnicismos innecesarios."
+      />
+    </>
+  );
+}
+
+const SPECIALTIES = [
+  {
+    title: "Bebés y primera infancia",
+    body: "Acompañamiento del desarrollo motor temprano, plagiocefalias, tortícolis, retrasos madurativos y dificultades de sostén.",
+  },
+  {
+    title: "Niños y adolescentes",
+    body: "Trastornos del neurodesarrollo, coordinación, tono muscular y postura en la etapa escolar.",
+  },
+  {
+    title: "Adultos",
+    body: "Rehabilitación neurológica, control postural, dolor crónico y trabajo osteopático integrativo.",
+  },
+];
+
+const TIMELINE = [
+  {
+    year: "Actualidad",
+    title: "Hospital Universitario de Ginebra (HUG)",
+    body: "Práctica clínica integrada en un entorno hospitalario multidisciplinar.",
+  },
+  {
+    year: "Formación continua",
+    title: "Osteopatía y neurodesarrollo",
+    body: "Formación específica en abordajes centrados en el sistema nervioso central y el desarrollo motor infantil.",
+  },
+  {
+    year: "+16 años",
+    title: "Práctica clínica",
+    body: "Trayectoria continuada tratando a familias, bebés, niños y adultos.",
+  },
+];
