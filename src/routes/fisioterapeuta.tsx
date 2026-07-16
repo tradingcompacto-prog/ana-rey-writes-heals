@@ -40,11 +40,11 @@ function Fisio() {
             <div className="flex items-center gap-4">
               <AmanecerMark className="h-8 w-auto" />
               <p className="text-xs uppercase tracking-[0.28em] text-primary">
-                Ana M. Rey · Fisioterapeuta · Osteópata
+                Fisioterapeuta · Osteópata
               </p>
             </div>
             <h1 className="mt-5 font-display text-4xl leading-tight md:text-5xl">
-              Una mirada al cuerpo que empieza en la cuna.
+              Mi mirada al cuerpo empieza en la cuna.
             </h1>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Desde hace 16 años acompaño a familias y pacientes a entender cómo
