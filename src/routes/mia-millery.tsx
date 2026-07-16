@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
 import { MiaMillerySignature, AmanecerDivider } from "@/components/brand/BrandMarks";
+import anaMia from "@/assets/ana-escritora-3.png.asset.json";
 
 export const Route = createFileRoute("/mia-millery")({
   head: () => ({
@@ -46,10 +47,11 @@ function Mia() {
               adultas que nadie enseña a tomar.
             </p>
           </div>
-          <PhotoPlaceholder
-            label="Retrato editorial de Mia Millery"
-            ratio="portrait"
-            className="relative"
+          <img
+            src={anaMia.url}
+            alt="Ana apoyada sobre una pila de libros, retrato editorial"
+            className="relative aspect-[3/4] w-full rounded-lg object-cover shadow-xl shadow-primary/10"
+            loading="eager"
           />
         </div>
       </section>
