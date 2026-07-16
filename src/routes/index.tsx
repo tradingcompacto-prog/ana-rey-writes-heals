@@ -4,8 +4,7 @@ import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
 import {
   AmanecerMark,
-  AmanecerDivider,
-  VinculoMark,
+  CalmaMark,
   MiaMillerySignature,
 } from "@/components/brand/BrandMarks";
 
