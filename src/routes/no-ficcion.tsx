@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
+import { AmanecerMark, AmanecerDivider } from "@/components/brand/BrandMarks";
 
 export const Route = createFileRoute("/no-ficcion")({
   head: () => ({
@@ -27,7 +28,8 @@ function NoFiccion() {
     <>
       <section className="border-b border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">
-          <p className="text-xs uppercase tracking-[0.28em] text-primary">
+          <AmanecerMark className="mx-auto h-10 w-auto" />
+          <p className="mt-6 text-xs uppercase tracking-[0.28em] text-primary">
             Ana M. Rey — No ficción
           </p>
           <h1 className="mt-5 font-display text-4xl leading-tight md:text-6xl">
@@ -43,6 +45,7 @@ function NoFiccion() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
+        <AmanecerDivider connector="abrigo" label="Abrigo · el gesto que cobija" className="mb-10" />
         <p className="text-xs uppercase tracking-[0.28em] text-primary">
           Colección infantil
         </p>
@@ -82,6 +85,9 @@ function NoFiccion() {
       </section>
 
       <section className="border-y border-border/60 bg-secondary/40">
+        <div className="pt-16">
+          <AmanecerDivider connector="calma" label="En proceso" />
+        </div>
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_1.15fr] md:items-center">
           <PhotoPlaceholder
             label="Escritorio de trabajo de Ana"
