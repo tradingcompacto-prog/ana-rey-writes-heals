@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
+import { AmanecerMark, AmanecerDivider } from "@/components/brand/BrandMarks";
 
 export const Route = createFileRoute("/fisioterapeuta")({
   head: () => ({
@@ -27,14 +28,21 @@ function Fisio() {
     <>
       <section className="border-b border-border/60">
         <div className="mx-auto grid max-w-6xl gap-14 px-6 py-20 md:grid-cols-[1fr_1.1fr] md:items-center">
-          <PhotoPlaceholder
-            label="Ana atendiendo en la consulta del HUG"
-            ratio="landscape"
-          />
+          <div className="relative">
+            <div className="wood-grain absolute -inset-4 rounded-2xl" aria-hidden />
+            <PhotoPlaceholder
+              label="Ana atendiendo en la consulta del HUG"
+              ratio="landscape"
+              className="relative"
+            />
+          </div>
           <div>
-            <p className="text-xs uppercase tracking-[0.28em] text-primary">
-              Ana M. Rey · Fisioterapeuta · Osteópata
-            </p>
+            <div className="flex items-center gap-4">
+              <AmanecerMark className="h-8 w-auto" />
+              <p className="text-xs uppercase tracking-[0.28em] text-primary">
+                Ana M. Rey · Fisioterapeuta · Osteópata
+              </p>
+            </div>
             <h1 className="mt-5 font-display text-4xl leading-tight md:text-5xl">
               Una mirada al cuerpo que empieza en la cuna.
             </h1>
@@ -54,6 +62,7 @@ function Fisio() {
 
       <section className="bg-secondary/40">
         <div className="mx-auto max-w-6xl px-6 py-20">
+          <AmanecerDivider connector="calma" label="Calma · respiración serena" className="mb-8" />
           <p className="text-xs uppercase tracking-[0.28em] text-primary">
             Especialización
           </p>
@@ -78,6 +87,7 @@ function Fisio() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
+        <AmanecerDivider connector="abrigo" label="Abrigo · el gesto que cobija" className="mb-10" />
         <div className="grid gap-14 md:grid-cols-[1.1fr_1fr] md:items-start">
           <div>
             <p className="text-xs uppercase tracking-[0.28em] text-primary">
