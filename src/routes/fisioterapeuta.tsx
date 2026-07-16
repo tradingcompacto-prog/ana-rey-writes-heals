@@ -146,7 +146,7 @@ function Fisio() {
 
       <Newsletter
         title="Notas desde la consulta"
-        description="Reflexiones breves sobre desarrollo motor, postura y crianza. Escritas por Ana, sin tecnicismos innecesarios."
+        description="Reflexiones breves sobre desarrollo motor, postura y crianza. Escritas por mí, sin tecnicismos innecesarios."
       />
     </>
   );
