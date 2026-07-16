@@ -77,6 +77,43 @@ function Index() {
         </div>
       </section>
 
+      {/* Mis dos mundos */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mb-14 flex flex-col items-center gap-6">
+          <div className="flex items-center gap-4">
+            <TwoWorldsIcon className="h-10 w-auto text-primary md:h-12" />
+            <h2 className="text-center font-display text-3xl md:text-4xl">
+              Mis dos mundos
+            </h2>
+          </div>
+          <div className="flex w-full items-center gap-6">
+            <div className="h-px flex-1 bg-border" />
+            <p className="text-xs uppercase tracking-[0.28em] text-primary/80">
+              Dos miradas, una misma curiosidad
+            </p>
+            <div className="h-px flex-1 bg-border" />
+          </div>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2">
+          <WorldCard
+            eyebrow="Mundo 01"
+            title="La fisioterapeuta"
+            body="Control postural y neurodesarrollo, con 16 años de trayectoria clínica en el Hospital Universitario de Ginebra. Atiendo en el hospital — aquí comparto quién soy y a qué me dedico."
+            cta="Conocer mi trayectoria"
+            to="/fisioterapeuta"
+            accent
+          />
+          <WorldCard
+            eyebrow="Mundo 02 · ¿Sabías esto?"
+            title="También soy escritora"
+            body="Como Mia Millery escribo ficción — thrillers psicológicos con mucho de resiliencia y de todo lo que no se dice en voz alta. La misma curiosidad por la mente, contada de otra forma."
+            cta="Descubrir mis libros"
+            to="/mia-millery"
+          />
+        </div>
+      </section>
+
       {/* Mi propósito */}
       <section className="border-y border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-6xl px-6 py-20">
@@ -119,33 +156,6 @@ function Index() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Mis dos mundos */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="mb-14 flex items-center gap-6">
-          <div className="h-px flex-1 bg-border" />
-          <TwoWorldsIcon className="h-12 w-auto text-primary md:h-16" />
-          <div className="h-px flex-1 bg-border" />
-        </div>
-
-        <div className="grid gap-8 md:grid-cols-2">
-          <WorldCard
-            eyebrow="Mundo 01"
-            title="La fisioterapeuta"
-            body="Control postural y neurodesarrollo, con 16 años de trayectoria clínica en el Hospital Universitario de Ginebra. Atiendo en el hospital — aquí comparto quién soy y a qué me dedico."
-            cta="Conocer mi trayectoria"
-            to="/fisioterapeuta"
-            accent
-          />
-          <WorldCard
-            eyebrow="Mundo 02 · ¿Sabías esto?"
-            title="También soy escritora"
-            body="Como Mia Millery escribo ficción — thrillers psicológicos con mucho de resiliencia y de todo lo que no se dice en voz alta. La misma curiosidad por la mente, contada de otra forma."
-            cta="Descubrir mis libros"
-            to="/mia-millery"
-          />
         </div>
       </section>
 
