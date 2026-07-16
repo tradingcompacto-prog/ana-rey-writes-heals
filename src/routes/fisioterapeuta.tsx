@@ -155,15 +155,15 @@ function Fisio() {
 const SPECIALTIES = [
   {
     title: "Bebés y primera infancia",
-    body: "Acompañamiento del desarrollo motor temprano, plagiocefalias, tortícolis, retrasos madurativos y dificultades de sostén.",
+    body: "Acompaño el desarrollo motor temprano, plagiocefalias, tortícolis, retrasos madurativos y dificultades de sostén.",
   },
   {
     title: "Niños y adolescentes",
-    body: "Trastornos del neurodesarrollo, coordinación, tono muscular y postura en la etapa escolar.",
+    body: "Abordo trastornos del neurodesarrollo, coordinación, tono muscular y postura en la etapa escolar.",
   },
   {
     title: "Adultos",
-    body: "Rehabilitación neurológica, control postural, dolor crónico y trabajo osteopático integrativo.",
+    body: "Trato la rehabilitación neurológica, el control postural, el dolor crónico y el trabajo osteopático integrativo.",
   },
 ];
 
@@ -171,16 +171,16 @@ const TIMELINE = [
   {
     year: "Actualidad",
     title: "Hospital Universitario de Ginebra (HUG)",
-    body: "Práctica clínica integrada en un entorno hospitalario multidisciplinar.",
+    body: "Integro mi práctica clínica en un entorno hospitalario multidisciplinar.",
   },
   {
     year: "Formación continua",
     title: "Osteopatía y neurodesarrollo",
-    body: "Formación específica en abordajes centrados en el sistema nervioso central y el desarrollo motor infantil.",
+    body: "Me formo específicamente en abordajes centrados en el sistema nervioso central y el desarrollo motor infantil.",
   },
   {
     year: "+16 años",
     title: "Práctica clínica",
-    body: "Trayectoria continuada tratando a familias, bebés, niños y adultos.",
+    body: "Llevo más de 16 años de trayectoria continuada tratando a familias, bebés, niños y adultos.",
   },
 ];
