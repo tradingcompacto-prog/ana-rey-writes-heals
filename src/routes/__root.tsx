@@ -196,9 +196,6 @@ function SiteFooter() {
           <p className="mt-2 text-sm text-muted-foreground">
             Fisioterapeuta · osteópata · escritora.
           </p>
-          <p className="mt-3 font-display italic text-primary/80">
-            Claridad y luz, siempre.
-          </p>
         </div>
         <div className="text-sm">
           <p className="mb-3 font-medium text-foreground">Navegación</p>
