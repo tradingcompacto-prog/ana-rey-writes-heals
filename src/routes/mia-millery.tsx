@@ -73,7 +73,7 @@ function Mia() {
       <Newsletter
         variant="garnet"
         title="Cartas de Mia Millery"
-        description="Aviso cuando salga una nueva novela, adelantos y algún texto escrito solo para quienes están aquí."
+        description="Te aviso cuando salga una nueva novela, te mando adelantos y algún texto escrito solo para quienes están aquí."
       />
     </>
   );
