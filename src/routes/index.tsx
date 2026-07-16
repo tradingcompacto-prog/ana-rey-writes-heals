@@ -6,6 +6,7 @@ import {
   AmanecerMark,
   MiaMillerySignature,
 } from "@/components/brand/BrandMarks";
+import dosMundosIcon from "@/assets/dos-mundos.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -80,7 +81,12 @@ function Index() {
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="mb-14 flex flex-col items-center gap-6">
           <div className="flex items-center gap-4">
-            <TwoWorldsIcon className="h-10 w-auto text-primary md:h-12" />
+            <img
+              src={dosMundosIcon.url}
+              alt=""
+              className="h-10 w-auto md:h-12"
+              aria-hidden
+            />
             <h2 className="text-center font-display text-3xl md:text-4xl">
               Mis dos mundos
             </h2>
@@ -266,37 +272,3 @@ function WorldCard({
   );
 }
 
-function TwoWorldsIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 64 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-hidden
-    >
-      <circle
-        cx="22"
-        cy="20"
-        r="18"
-        className="stroke-current"
-        strokeWidth="2"
-        fill="none"
-      />
-      <circle
-        cx="42"
-        cy="20"
-        r="18"
-        className="stroke-current"
-        strokeWidth="2"
-        fill="none"
-      />
-      <circle
-        cx="32"
-        cy="20"
-        r="5"
-        className="fill-current"
-      />
-    </svg>
-  );
-}
