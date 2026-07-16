@@ -117,8 +117,8 @@ function NoFiccion() {
             </h2>
             <p className="mt-4 text-muted-foreground">
               Un ensayo divulgativo para familias y profesionales, con lo que
-              Ana quiere que se sepa desde el nacimiento sobre cómo se aprende
-              a moverse.
+              quiero que se sepa desde el nacimiento sobre cómo se aprende a
+              moverse.
             </p>
             <p className="mt-3 text-sm text-primary">
               Publicación prevista — próximamente.
@@ -130,7 +130,7 @@ function NoFiccion() {
       <Newsletter
         variant="garnet"
         title="Cartas desde el barco"
-        description="Novedades de la colección, lecturas y avances del libro en curso. Directo desde el escritorio de Ana."
+        description="Novedades de la colección, lecturas y avances del libro en curso. Directo desde mi escritorio."
       />
     </>
   );
