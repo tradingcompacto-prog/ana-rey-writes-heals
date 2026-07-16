@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
 import { AmanecerMark, AmanecerDivider } from "@/components/brand/BrandMarks";
+import anaHero from "@/assets/ana-escritora-1.jpg.asset.json";
+import anaRiendo from "@/assets/ana-escritora-2.png.asset.json";
 
 export const Route = createFileRoute("/no-ficcion")({
   head: () => ({
@@ -27,20 +29,31 @@ function NoFiccion() {
   return (
     <>
       <section className="border-b border-border/60 bg-secondary/40">
-        <div className="mx-auto max-w-5xl px-6 py-20 text-center">
-          <AmanecerMark className="mx-auto h-10 w-auto" />
-          <p className="mt-6 text-xs uppercase tracking-[0.28em] text-primary">
-            Ana M. Rey — No ficción
-          </p>
-          <h1 className="mt-5 font-display text-4xl leading-tight md:text-6xl">
-            Escribir para explicar
-            <br /> lo que veo en la consulta.
-          </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Cuentos y ensayo firmados con el mismo nombre con el que atiendo:
-            porque nacen del mismo trabajo, del mismo cuidado, de la misma
-            mirada al neurodesarrollo.
-          </p>
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1.05fr_1fr] md:items-center">
+          <div>
+            <AmanecerMark className="h-10 w-auto" />
+            <p className="mt-6 text-xs uppercase tracking-[0.28em] text-primary">
+              Ana M. Rey — No ficción
+            </p>
+            <h1 className="mt-5 font-display text-4xl leading-tight md:text-6xl">
+              Escribir para explicar
+              <br /> lo que veo en la consulta.
+            </h1>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
+              Cuentos y ensayo firmados con el mismo nombre con el que atiendo:
+              porque nacen del mismo trabajo, del mismo cuidado, de la misma
+              mirada al neurodesarrollo.
+            </p>
+          </div>
+          <div className="relative">
+            <div className="wood-grain absolute -inset-4 rounded-2xl" aria-hidden />
+            <img
+              src={anaHero.url}
+              alt="Ana con una taza y un ejemplar de Muñeca de Papel"
+              className="relative aspect-[3/4] w-full rounded-lg object-cover shadow-xl shadow-primary/10"
+              loading="eager"
+            />
+          </div>
         </div>
       </section>
 
@@ -89,9 +102,11 @@ function NoFiccion() {
           <AmanecerDivider connector="calma" label="En proceso" />
         </div>
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_1.15fr] md:items-center">
-          <PhotoPlaceholder
-            label="Escritorio de trabajo de Ana"
-            ratio="landscape"
+          <img
+            src={anaRiendo.url}
+            alt="Ana riendo con una pila de libros entre las manos"
+            className="aspect-[4/5] w-full rounded-lg object-cover shadow-lg shadow-primary/10"
+            loading="lazy"
           />
           <div>
             <p className="text-xs uppercase tracking-[0.28em] text-primary">
