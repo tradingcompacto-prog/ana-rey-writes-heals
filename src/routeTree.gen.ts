@@ -10,12 +10,18 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as NoFiccionRouteImport } from './routes/no-ficcion'
+import { Route as MiaMilleryRouteImport } from './routes/mia-millery'
 import { Route as FisioterapeutaRouteImport } from './routes/fisioterapeuta'
 import { Route as IndexRouteImport } from './routes/index'
 
 const NoFiccionRoute = NoFiccionRouteImport.update({
   id: '/no-ficcion',
   path: '/no-ficcion',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MiaMilleryRoute = MiaMilleryRouteImport.update({
+  id: '/mia-millery',
+  path: '/mia-millery',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FisioterapeutaRoute = FisioterapeutaRouteImport.update({
@@ -32,30 +38,34 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
+  '/mia-millery': typeof MiaMilleryRoute
   '/no-ficcion': typeof NoFiccionRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
+  '/mia-millery': typeof MiaMilleryRoute
   '/no-ficcion': typeof NoFiccionRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
+  '/mia-millery': typeof MiaMilleryRoute
   '/no-ficcion': typeof NoFiccionRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/fisioterapeuta' | '/no-ficcion'
+  fullPaths: '/' | '/fisioterapeuta' | '/mia-millery' | '/no-ficcion'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/fisioterapeuta' | '/no-ficcion'
-  id: '__root__' | '/' | '/fisioterapeuta' | '/no-ficcion'
+  to: '/' | '/fisioterapeuta' | '/mia-millery' | '/no-ficcion'
+  id: '__root__' | '/' | '/fisioterapeuta' | '/mia-millery' | '/no-ficcion'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   FisioterapeutaRoute: typeof FisioterapeutaRoute
+  MiaMilleryRoute: typeof MiaMilleryRoute
   NoFiccionRoute: typeof NoFiccionRoute
 }
 
@@ -66,6 +76,13 @@ declare module '@tanstack/react-router' {
       path: '/no-ficcion'
       fullPath: '/no-ficcion'
       preLoaderRoute: typeof NoFiccionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mia-millery': {
+      id: '/mia-millery'
+      path: '/mia-millery'
+      fullPath: '/mia-millery'
+      preLoaderRoute: typeof MiaMilleryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fisioterapeuta': {
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   FisioterapeutaRoute: FisioterapeutaRoute,
+  MiaMilleryRoute: MiaMilleryRoute,
   NoFiccionRoute: NoFiccionRoute,
 }
 export const routeTree = rootRouteImport
