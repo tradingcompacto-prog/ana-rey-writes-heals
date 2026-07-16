@@ -1,24 +1,170 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
+import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
+import { Newsletter } from "@/components/Newsletter";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Ana Muiño — Fisioterapeuta y escritora" },
+      {
+        name: "description",
+        content:
+          "Dos mundos que conviven: la consulta clínica de Ana M. Rey y sus libros para entender la infancia y el cuerpo.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
+    <>
+      {/* HERO — fisio primero como puerta de entrada */}
+      <section className="relative overflow-hidden">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1.15fr_1fr] md:items-center md:py-28">
+          <div>
+            <p className="text-xs uppercase tracking-[0.28em] text-primary">
+              Ana M. Rey — Fisioterapeuta · Osteópata
+            </p>
+            <h1 className="mt-5 font-display text-5xl leading-[1.05] text-foreground md:text-6xl">
+              Enseñando a entender
+              <br />
+              y cuidar el cuerpo
+              <br />
+              <span className="text-primary">desde el nacimiento.</span>
+            </h1>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
+              16 años de práctica clínica especializada en control postural y
+              neurodesarrollo — bebés, niños y adultos. Actualmente en el
+              Hospital Universitario de Ginebra (HUG).
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                to="/fisioterapeuta"
+                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                Conocer su trabajo clínico
+              </Link>
+              <Link
+                to="/contacto"
+                className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
+              >
+                Escribir a Ana
+              </Link>
+            </div>
+          </div>
+          <div className="relative">
+            <PhotoPlaceholder
+              label="Retrato profesional de Ana en consulta"
+              ratio="portrait"
+              className="shadow-xl shadow-primary/10"
+            />
+            <div
+              className="absolute -bottom-6 -left-6 hidden h-32 w-32 rounded-full bg-primary/10 md:block"
+              aria-hidden
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Descubrimiento: los dos mundos */}
+      <section className="border-y border-border/60 bg-secondary/40">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="mb-14 max-w-2xl">
+            <p className="text-xs uppercase tracking-[0.28em] text-primary">
+              Dos mundos, una misma mirada
+            </p>
+            <h2 className="mt-4 font-display text-3xl md:text-4xl">
+              La consulta y los libros conviven en la misma persona.
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Todo lo que Ana escribe nace de lo que ve cada semana en la
+              consulta: cómo un cuerpo aprende a sostenerse, a moverse, a estar
+              en el mundo.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <WorldCard
+              eyebrow="Ana M. Rey"
+              title="Fisioterapeuta"
+              body="Control postural y neurodesarrollo, para bebés, niños y adultos. Hospital Universitario de Ginebra."
+              cta="Ver trayectoria clínica"
+              to="/fisioterapeuta"
+              accent
+            />
+            <WorldCard
+              eyebrow="Ana M. Rey"
+              title="No ficción e infantil"
+              body="La colección El Barco de los Amigos y un ensayo en curso sobre desarrollo motor infantil."
+              cta="Descubrir los libros"
+              to="/no-ficcion"
+            />
+            <WorldCard
+              eyebrow="Mia Millery"
+              title="Ficción adulta"
+              body="Un heterónimo para novela adulta. Espacio propio, tono propio."
+              cta="Entrar en Mia Millery"
+              to="/mia-millery"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Lema / cita */}
+      <section className="mx-auto max-w-4xl px-6 py-24 text-center">
+        <p className="text-xs uppercase tracking-[0.28em] text-primary">Lema</p>
+        <blockquote className="mt-6 font-display text-3xl leading-snug text-foreground md:text-4xl">
+          “Enseñando a entender y cuidar el cuerpo desde el nacimiento.”
+        </blockquote>
+        <p className="mt-4 text-sm text-muted-foreground">— Ana M. Rey</p>
+      </section>
+
+      <Newsletter variant="garnet" />
+    </>
+  );
+}
+
+function WorldCard({
+  eyebrow,
+  title,
+  body,
+  cta,
+  to,
+  accent,
+}: {
+  eyebrow: string;
+  title: string;
+  body: string;
+  cta: string;
+  to: "/fisioterapeuta" | "/no-ficcion" | "/mia-millery";
+  accent?: boolean;
+}) {
+  return (
+    <Link
+      to={to}
+      className={`group flex flex-col justify-between rounded-2xl border p-8 transition-all hover:-translate-y-1 hover:shadow-lg ${
+        accent
+          ? "border-primary/30 bg-background"
+          : "border-border bg-background"
+      }`}
     >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+      <div>
+        <p className="text-[10px] uppercase tracking-[0.28em] text-primary/80">
+          {eyebrow}
+        </p>
+        <h3 className="mt-3 font-display text-2xl">{title}</h3>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          {body}
+        </p>
+      </div>
+      <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-primary">
+        {cta}
+        <span aria-hidden className="transition-transform group-hover:translate-x-1">
+          →
+        </span>
+      </span>
+    </Link>
   );
 }
