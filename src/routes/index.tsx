@@ -203,22 +203,18 @@ function Index() {
   );
 }
 
-const PURPOSE_PILLARS = [
+const ABOUT_PILLARS = [
   {
-    title: "El cuerpo se aprende",
-    body: "Neurodesarrollo desde el nacimiento.",
+    title: "Rigor",
+    body: "Todo lo que digo está respaldado por la ciencia y la experiencia clínica.",
   },
   {
-    title: "Todo conecta",
-    body: "Postura, cerebro, parto y suelo pélvico — un mismo sistema.",
+    title: "Claridad",
+    body: "Información compleja, explicada sin sacrificar la verdad.",
   },
   {
-    title: "El postparto es fisioterapia",
-    body: "El cuerpo de la madre también merece atención.",
-  },
-  {
-    title: "Entender cambia decisiones",
-    body: "No se trata de hacer más, sino de saber por qué.",
+    title: "Calma sobre alarma",
+    body: "Reduzco la ansiedad. Nunca la genero.",
   },
 ];
 
