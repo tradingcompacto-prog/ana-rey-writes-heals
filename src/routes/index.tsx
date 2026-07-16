@@ -43,8 +43,8 @@ function Index() {
               <span className="text-primary">desde el nacimiento.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-              16 años de práctica clínica especializada en control postural y
-              neurodesarrollo — bebés, niños y adultos. Actualmente en el
+              Llevo 16 años de práctica clínica especializada en control postural
+              y neurodesarrollo — bebés, niños y adultos. Actualmente en el
               Hospital Universitario de Ginebra (HUG).
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -52,13 +52,13 @@ function Index() {
                 to="/fisioterapeuta"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
-                Conocer su trabajo clínico
+                Conocer mi trabajo clínico
               </Link>
               <Link
                 to="/contacto"
                 className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
               >
-                Escribir a Ana
+                Escribirme
               </Link>
             </div>
           </div>
