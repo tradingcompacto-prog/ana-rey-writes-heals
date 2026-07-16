@@ -129,12 +129,11 @@ function Index() {
             Dos mundos, una misma mirada
           </p>
           <h2 className="mt-4 font-display text-3xl md:text-4xl">
-            La consulta y los libros conviven en la misma persona.
+            La consulta y los libros conviven en mí.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Todo lo que Ana escribe nace de lo que ve cada semana en la
-            consulta: cómo un cuerpo aprende a sostenerse, a moverse, a estar
-            en el mundo.
+            Todo lo que escribo nace de lo que veo cada semana en la consulta:
+            cómo aprendemos a sostenernos, a movernos, a estar en el mundo.
           </p>
         </div>
 
@@ -142,22 +141,22 @@ function Index() {
           <WorldCard
             eyebrow="Ana M. Rey"
             title="Fisioterapeuta"
-            body="Control postural y neurodesarrollo, para bebés, niños y adultos. Hospital Universitario de Ginebra."
-            cta="Ver trayectoria clínica"
+            body="Trabajo el control postural y el neurodesarrollo con bebés, niños y adultos. Actualmente en el Hospital Universitario de Ginebra (HUG)."
+            cta="Ver mi trayectoria clínica"
             to="/fisioterapeuta"
             accent
           />
           <WorldCard
             eyebrow="Ana M. Rey"
             title="No ficción e infantil"
-            body="La colección El Barco de los Amigos y un ensayo en curso sobre desarrollo motor infantil."
+            body="Escribo la colección El Barco de los Amigos y un ensayo en curso sobre desarrollo motor infantil."
             cta="Descubrir los libros"
             to="/no-ficcion"
           />
           <WorldCard
             eyebrow="Pseudónimo · ficción adulta"
             title="Ficción adulta"
-            body="Un heterónimo para novela adulta. Espacio propio, tono propio."
+            body="Uso un heterónimo para mi ficción adulta. Espacio propio, tono propio."
             cta="Entrar en Mia Millery"
             to="/mia-millery"
           />
