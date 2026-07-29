@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Ana M. Rey: fisioterapeuta especializada en control postural y neurodesarrollo. También escritora de literatura infantil y no ficción.",
+          "Ana M. Rey: fisioterapeuta especializada en control postural y neurodesarrollo. También escritora bajo el heterónimo Mia Millery.",
       },
       { name: "author", content: "Ana Muiño" },
       { property: "og:title", content: "Ana Muiño — Fisioterapeuta y escritora" },
@@ -169,9 +169,6 @@ function SiteHeader() {
           <Link to="/fisioterapeuta" activeProps={{ className: activeCls }} className={linkBase}>
             Fisioterapeuta
           </Link>
-          <Link to="/no-ficcion" activeProps={{ className: activeCls }} className={linkBase}>
-            No ficción
-          </Link>
           <Link to="/mia-millery" activeProps={{ className: activeCls }} className={linkBase}>
             Mia Millery
           </Link>
@@ -201,7 +198,6 @@ function SiteFooter() {
           <p className="mb-3 font-medium text-foreground">Navegación</p>
           <ul className="space-y-2 text-muted-foreground">
             <li><Link to="/fisioterapeuta" className="hover:text-primary">Fisioterapeuta</Link></li>
-            <li><Link to="/no-ficcion" className="hover:text-primary">No ficción</Link></li>
             <li><Link to="/mia-millery" className="hover:text-primary">Mia Millery</Link></li>
             <li><Link to="/contacto" className="hover:text-primary">Contacto</Link></li>
           </ul>

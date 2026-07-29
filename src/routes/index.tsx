@@ -236,7 +236,7 @@ function WorldCard({
   title: string;
   body: string;
   cta: string;
-  to: "/fisioterapeuta" | "/no-ficcion" | "/mia-millery";
+  to: "/fisioterapeuta" | "/mia-millery";
   accent?: boolean;
 }) {
   const isMia = to === "/mia-millery";
