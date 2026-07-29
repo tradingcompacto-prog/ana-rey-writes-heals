@@ -38,7 +38,7 @@ function Mia() {
             />
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
               Bajo este nombre firmo mi ficción adulta. Un espacio propio, con
-              voz propia — separado de la consulta clínica y de la no ficción.
+              voz propia — separado de la consulta clínica.
             </p>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
               Novelas en las que caben el deseo, la memoria y las decisiones

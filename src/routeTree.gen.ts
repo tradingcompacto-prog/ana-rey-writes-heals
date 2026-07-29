@@ -9,17 +9,11 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as NoFiccionRouteImport } from './routes/no-ficcion'
 import { Route as MiaMilleryRouteImport } from './routes/mia-millery'
 import { Route as FisioterapeutaRouteImport } from './routes/fisioterapeuta'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as IndexRouteImport } from './routes/index'
 
-const NoFiccionRoute = NoFiccionRouteImport.update({
-  id: '/no-ficcion',
-  path: '/no-ficcion',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const MiaMilleryRoute = MiaMilleryRouteImport.update({
   id: '/mia-millery',
   path: '/mia-millery',
@@ -46,14 +40,12 @@ export interface FileRoutesByFullPath {
   '/contacto': typeof ContactoRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
   '/mia-millery': typeof MiaMilleryRoute
-  '/no-ficcion': typeof NoFiccionRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
   '/mia-millery': typeof MiaMilleryRoute
-  '/no-ficcion': typeof NoFiccionRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -61,25 +53,13 @@ export interface FileRoutesById {
   '/contacto': typeof ContactoRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
   '/mia-millery': typeof MiaMilleryRoute
-  '/no-ficcion': typeof NoFiccionRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/contacto'
-    | '/fisioterapeuta'
-    | '/mia-millery'
-    | '/no-ficcion'
+  fullPaths: '/' | '/contacto' | '/fisioterapeuta' | '/mia-millery'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contacto' | '/fisioterapeuta' | '/mia-millery' | '/no-ficcion'
-  id:
-    | '__root__'
-    | '/'
-    | '/contacto'
-    | '/fisioterapeuta'
-    | '/mia-millery'
-    | '/no-ficcion'
+  to: '/' | '/contacto' | '/fisioterapeuta' | '/mia-millery'
+  id: '__root__' | '/' | '/contacto' | '/fisioterapeuta' | '/mia-millery'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -87,18 +67,10 @@ export interface RootRouteChildren {
   ContactoRoute: typeof ContactoRoute
   FisioterapeutaRoute: typeof FisioterapeutaRoute
   MiaMilleryRoute: typeof MiaMilleryRoute
-  NoFiccionRoute: typeof NoFiccionRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/no-ficcion': {
-      id: '/no-ficcion'
-      path: '/no-ficcion'
-      fullPath: '/no-ficcion'
-      preLoaderRoute: typeof NoFiccionRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/mia-millery': {
       id: '/mia-millery'
       path: '/mia-millery'
@@ -135,18 +107,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactoRoute: ContactoRoute,
   FisioterapeutaRoute: FisioterapeutaRoute,
   MiaMilleryRoute: MiaMilleryRoute,
-  NoFiccionRoute: NoFiccionRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
