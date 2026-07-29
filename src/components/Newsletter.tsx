@@ -10,7 +10,7 @@ type Props = {
 export function Newsletter({
   eyebrow = "Newsletter",
   title = "Cartas desde el barco",
-  description = "Recibe, cada tanto, apuntes sobre neurodesarrollo, avances de los libros y pequeñas historias. Sin ruido, sin urgencia.",
+  description = "Recibe, cada X, apuntes sobre neurodesarrollo, avances de los libros y pequeñas historias. Sin ruido, sin urgencia.",
   variant = "light",
 }: Props) {
   const [email, setEmail] = useState("");

@@ -164,10 +164,7 @@ function Fisio() {
         </div>
       </section>
 
-      <Newsletter
-        title="Notas desde la consulta"
-        description="Reflexiones breves sobre desarrollo motor, postura y crianza. Escritas por mí, sin tecnicismos innecesarios."
-      />
+      <Newsletter />
     </>
   );
 }
