@@ -10,12 +10,12 @@ export const Route = createFileRoute("/contacto")({
       {
         name: "description",
         content:
-          "Para consultas sobre los libros o dudas puntuales. Las citas clínicas de fisioterapia no se gestionan por la web.",
+          "Para consultas sobre libros, neurodesarrollo o dudas puntuales. Las citas clínicas de fisioterapia no se gestionan por la web.",
       },
       { property: "og:title", content: "Contacto — Ana Muiño" },
       {
         property: "og:description",
-        content: "Escribe a Ana para consultas sobre libros o dudas puntuales.",
+        content: "Escribe a Ana para consultas sobre libros, neurodesarrollo o dudas puntuales.",
       },
     ],
   }),
