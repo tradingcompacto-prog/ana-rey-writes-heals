@@ -25,7 +25,7 @@ export const Route = createFileRoute("/contacto")({
 const schema = z.object({
   name: z.string().trim().min(1, "Introduce tu nombre").max(100),
   email: z.string().trim().email("Correo no válido").max(255),
-  topic: z.enum(["libros", "duda", "prensa", "otro"]),
+  topic: z.enum(["libros", "neurodesarrollo", "duda", "prensa", "otro"]),
   message: z.string().trim().min(10, "Cuéntame un poco más").max(1500),
 });
 
@@ -66,8 +66,8 @@ function Contacto() {
           Escríbeme.
         </h1>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          Este formulario es para que me escribas sobre los libros, prensa o
-          dudas puntuales. Léelo con calma:
+          Este formulario es para que me escribas sobre los libros, neurodesarrollo,
+          prensa o dudas puntuales. Léelo con calma:
         </p>
 
         <div className="mt-8 rounded-2xl border border-primary/25 bg-primary/5 p-6 text-sm leading-relaxed">
@@ -107,6 +107,7 @@ function Contacto() {
               className="w-full rounded-md border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
             >
               <option value="libros">Consulta sobre los libros</option>
+              <option value="neurodesarrollo">Neurodesarrollo</option>
               <option value="duda">Duda puntual</option>
               <option value="prensa">Prensa / entrevista</option>
               <option value="otro">Otro</option>
