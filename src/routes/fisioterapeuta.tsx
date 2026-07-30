@@ -62,7 +62,7 @@ function Fisio() {
 
       <section className="bg-secondary/40">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          <AmanecerDivider connector="calma" label="Calma · respiración serena" className="mb-8" />
+          <AmanecerDivider connector="calma" className="mb-8" />
           <p className="text-xs uppercase tracking-[0.28em] text-primary">
             Especialización
           </p>
@@ -123,7 +123,7 @@ function Fisio() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <AmanecerDivider connector="abrigo" label="Abrigo · el gesto que cobija" className="mb-10" />
+        <AmanecerDivider connector="abrigo" className="mb-10" />
         <div className="grid gap-14 md:grid-cols-[1.1fr_1fr] md:items-start">
           <div>
             <p className="text-xs uppercase tracking-[0.28em] text-primary">
