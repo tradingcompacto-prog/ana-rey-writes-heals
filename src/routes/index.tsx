@@ -87,13 +87,6 @@ function Index() {
               Mis dos mundos
             </h2>
           </div>
-          <div className="flex w-full items-center gap-6">
-            <div className="h-px flex-1 bg-border" />
-            <p className="text-xs uppercase tracking-[0.28em] text-primary/80">
-              Dos miradas, una misma curiosidad
-            </p>
-            <div className="h-px flex-1 bg-border" />
-          </div>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
