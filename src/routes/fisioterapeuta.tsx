@@ -31,10 +31,10 @@ function Fisio() {
         <div className="mx-auto grid max-w-6xl gap-14 px-6 py-20 md:grid-cols-[1fr_1.1fr] md:items-center">
           <div className="relative">
             <div className="wood-grain absolute -inset-4 rounded-2xl" aria-hidden />
-            <PhotoPlaceholder
-              label="Ana atendiendo en la consulta del HUG"
-              ratio="landscape"
-              className="relative"
+            <img
+              src={anaAtendiendo.url}
+              alt="Ana atendiendo en la consulta del HUG"
+              className="relative w-full rounded-2xl object-cover"
             />
           </div>
           <div>
