@@ -63,16 +63,11 @@ function Index() {
               </Link>
             </div>
           </div>
-          <div className="relative">
-            {/* Bloque de madera detrás del retrato — textura sutil */}
-            <div
-              className="wood-grain absolute -inset-4 -z-0 rounded-2xl opacity-90"
-              aria-hidden
-            />
+          <div>
             <img
               src={anaRetratoHome.url}
               alt="Ana Muiño con una taza roja y su libro Muñeca de Papel"
-              className="relative w-full rounded-2xl object-cover shadow-xl shadow-primary/10"
+              className="w-full object-cover"
             />
           </div>
         </div>
