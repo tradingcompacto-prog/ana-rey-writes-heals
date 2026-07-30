@@ -199,6 +199,12 @@ function Index() {
           <span className="italic">Entender</span> para{" "}
           <span className="italic">cuidar.</span>
         </blockquote>
+        <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
+          Mi propósito es hacer que el conocimiento del cuerpo sea accesible
+          para todas las personas, en todas las etapas de la vida — no solo en la
+          consulta, sino en el día a día. Democratizar el conocimiento clínico
+          que suele quedarse encerrado entre cuatro paredes.
+        </p>
       </section>
 
       <Newsletter variant="garnet" />
