@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
 import { AmanecerMark, AmanecerDivider } from "@/components/brand/BrandMarks";
+import anaAtendiendo from "@/assets/ana-atendiendo-hug.jpg.asset.json";
 
 export const Route = createFileRoute("/fisioterapeuta")({
   head: () => ({
