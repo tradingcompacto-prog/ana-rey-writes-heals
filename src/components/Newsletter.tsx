@@ -59,6 +59,10 @@ export function Newsletter({ variant = "light" }: Props) {
               Si te convence, te lo quedas — se suma al anterior. Si no, no
               pasa nada: la semana que viene hay uno nuevo esperándote.
             </p>
+            <p>
+              Y de vez en cuando, algún apunte sobre mis novelas — porque
+              escribir también es parte de cómo entiendo el cuerpo y la mente.
+            </p>
             <p>Así, grado a grado, sin agobios ni promesas imposibles.</p>
           </div>
         </div>
