@@ -1,18 +1,10 @@
 import { useState } from "react";
 
 type Props = {
-  eyebrow?: string;
-  title?: string;
-  description?: string;
   variant?: "light" | "garnet";
 };
 
-export function Newsletter({
-  eyebrow = "Newsletter",
-  title = "Cartas desde el barco",
-  description = "Recibe, cada X, apuntes sobre neurodesarrollo, avances de los libros y pequeñas historias. Sin ruido, sin urgencia.",
-  variant = "light",
-}: Props) {
+export function Newsletter({ variant = "light" }: Props) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "ok" | "error">("idle");
 
@@ -33,25 +25,37 @@ export function Newsletter({
           : "bg-secondary/60 text-foreground"
       }
     >
-      <div className="mx-auto grid max-w-5xl gap-10 px-6 py-20 md:grid-cols-[1.1fr_1fr] md:items-center">
+      <div className="mx-auto grid max-w-5xl gap-10 px-6 py-20 md:grid-cols-[1.1fr_1fr] md:items-start">
         <div>
-          <p
-            className={`text-xs uppercase tracking-[0.25em] ${
-              isGarnet ? "text-primary-foreground/70" : "text-primary/80"
-            }`}
-          >
-            {eyebrow}
-          </p>
-          <h2 className="mt-3 font-display text-3xl md:text-4xl">{title}</h2>
-          <p
-            className={`mt-4 max-w-md text-sm leading-relaxed ${
+          <h2 className="font-display text-2xl md:text-3xl">
+            Cada semana, un grado hacia un cuerpo que entiendes mejor
+          </h2>
+          <div
+            className={`mt-4 space-y-3 text-sm leading-relaxed ${
               isGarnet ? "text-primary-foreground/85" : "text-muted-foreground"
             }`}
           >
-            {description}
-          </p>
+            <p>
+              No hace falta cambiarlo todo de golpe. El cuerpo mejora igual que
+              se mueve una articulación: grado a grado, sin prisa.
+            </p>
+            <p>Cada semana te mando dos cosas, cortitas:</p>
+            <ul className="list-disc space-y-1 pl-5">
+              <li>
+                Una reflexión que te haga mirar tu cuerpo de otra forma.
+              </li>
+              <li>
+                Y un solo ejercicio, simple, para practicar esa semana.
+              </li>
+            </ul>
+            <p>
+              Si te convence, te lo quedas — se suma al anterior. Si no, no
+              pasa nada: la semana que viene hay uno nuevo esperándote.
+            </p>
+            <p>Así, grado a grado, sin agobios ni promesas imposibles.</p>
+          </div>
         </div>
-        <form onSubmit={onSubmit} className="w-full">
+        <form onSubmit={onSubmit} className="w-full md:pt-12">
           <label htmlFor="nl-email" className="sr-only">
             Correo electrónico
           </label>
@@ -81,7 +85,7 @@ export function Newsletter({
                   : "bg-primary text-primary-foreground hover:bg-primary/90"
               }`}
             >
-              Suscribirme
+              Quiero mi grado semanal →
             </button>
           </div>
           <p
@@ -92,7 +96,7 @@ export function Newsletter({
           >
             {status === "ok" && "Gracias. Revisa tu bandeja para confirmar."}
             {status === "error" && "Introduce un correo válido, por favor."}
-            {status === "idle" && "Sin spam. Puedes darte de baja cuando quieras."}
+            {status === "idle" && "Un email a la semana. Sin spam. Cancelas cuando quieras."}
           </p>
         </form>
       </div>
