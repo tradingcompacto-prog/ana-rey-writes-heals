@@ -81,6 +81,26 @@ function Contacto() {
           </p>
         </div>
 
+        <p className="mt-6 max-w-2xl text-sm text-muted-foreground">
+          También puedes escribirme a{" "}
+          <a
+            href="mailto:info@anamrey.com"
+            className="text-primary underline underline-offset-4 hover:text-primary/80"
+          >
+            info@anamrey.com
+          </a>{" "}
+          o a través de{" "}
+          <a
+            href="https://www.instagram.com/ana.mrey/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline underline-offset-4 hover:text-primary/80"
+          >
+            Instagram
+          </a>
+          .
+        </p>
+
         <form onSubmit={onSubmit} className="mt-12 grid gap-6">
           <div className="grid gap-6 md:grid-cols-2">
             <Field label="Nombre" error={errors.name}>
