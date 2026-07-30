@@ -7,6 +7,7 @@ import {
   MiaMillerySignature,
 } from "@/components/brand/BrandMarks";
 import dosMundosIcon from "@/assets/dos-mundos.png.asset.json";
+import anaRetratoHome from "@/assets/ana-retrato-home.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
