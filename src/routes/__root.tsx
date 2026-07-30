@@ -191,7 +191,7 @@ function SiteFooter() {
             <p className="font-display text-lg text-primary">Ana&nbsp;M.&nbsp;Rey</p>
           </div>
           <p className="mt-2 text-sm text-muted-foreground">
-            Fisioterapeuta · osteópata · escritora
+            Fisioterapeuta · Osteópata · Escritora
           </p>
         </div>
         <div className="text-sm">
