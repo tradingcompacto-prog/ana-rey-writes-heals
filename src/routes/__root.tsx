@@ -188,7 +188,7 @@ function SiteHeader() {
 function SiteFooter() {
   return (
     <footer className="border-t border-border/70 bg-secondary/40">
-      <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
             <AmanecerMark className="h-8 w-auto" />
@@ -204,6 +204,14 @@ function SiteFooter() {
             <li><Link to="/fisioterapeuta" className="hover:text-primary">Fisioterapeuta</Link></li>
             <li><Link to="/mia-millery" className="hover:text-primary">Mia Millery</Link></li>
             <li><Link to="/contacto" className="hover:text-primary">Contacto</Link></li>
+          </ul>
+        </div>
+        <div className="text-sm">
+          <p className="mb-3 font-medium text-foreground">Legal</p>
+          <ul className="space-y-2 text-muted-foreground">
+            <li><Link to="/aviso-legal" className="hover:text-primary">Aviso legal</Link></li>
+            <li><Link to="/politica-de-privacidad" className="hover:text-primary">Política de privacidad</Link></li>
+            <li><Link to="/politica-de-cookies" className="hover:text-primary">Política de cookies</Link></li>
           </ul>
         </div>
         <div className="text-sm text-muted-foreground">
