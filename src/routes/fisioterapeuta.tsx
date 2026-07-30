@@ -29,12 +29,11 @@ function Fisio() {
     <>
       <section className="border-b border-border/60">
         <div className="mx-auto grid max-w-6xl gap-14 px-6 py-20 md:grid-cols-[1fr_1.1fr] md:items-center">
-          <div className="relative">
-            <div className="wood-grain absolute -inset-4 rounded-2xl" aria-hidden />
+          <div>
             <img
               src={anaAtendiendo.url}
               alt="Ana atendiendo en la consulta del HUG"
-              className="relative aspect-[4/3] w-full rounded-2xl object-cover"
+              className="aspect-[4/3] w-full object-cover object-top"
             />
           </div>
           <div>
