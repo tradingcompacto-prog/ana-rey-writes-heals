@@ -41,8 +41,12 @@ function Mia() {
               voz propia — separado de la consulta clínica.
             </p>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              Novelas en las que caben el deseo, la memoria y las decisiones
-              adultas que nadie enseña a tomar.
+              Antes de ser fisioterapeuta, soy lectora. Y desde hace años,
+              también escritora. Empecé a escribir en serio en un momento
+              difícil, como refugio y como forma de poner en orden las ideas — y
+              no he parado. Mis novelas nacen del mismo lugar que mi trabajo en
+              consulta: el interés genuino por el cuerpo, la mente y todo lo que
+              no se dice en voz alta.
             </p>
           </div>
           <img
