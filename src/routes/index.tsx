@@ -55,10 +55,10 @@ function Index() {
                 Conocer mi trabajo clínico
               </Link>
               <Link
-                to="/contacto"
+                to="/mia-millery"
                 className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
               >
-                Escribirme
+                También escribo — Descubre mis libros
               </Link>
             </div>
           </div>
