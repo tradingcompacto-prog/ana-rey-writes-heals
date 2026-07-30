@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
 import { AmanecerMark, AmanecerDivider } from "@/components/brand/BrandMarks";
+import anaAtendiendo from "@/assets/ana-atendiendo-hug.jpg.asset.json";
 
 export const Route = createFileRoute("/fisioterapeuta")({
   head: () => ({
@@ -30,10 +31,10 @@ function Fisio() {
         <div className="mx-auto grid max-w-6xl gap-14 px-6 py-20 md:grid-cols-[1fr_1.1fr] md:items-center">
           <div className="relative">
             <div className="wood-grain absolute -inset-4 rounded-2xl" aria-hidden />
-            <PhotoPlaceholder
-              label="Ana atendiendo en la consulta del HUG"
-              ratio="landscape"
-              className="relative"
+            <img
+              src={anaAtendiendo.url}
+              alt="Ana atendiendo en la consulta del HUG"
+              className="relative aspect-[4/3] w-full rounded-2xl object-cover"
             />
           </div>
           <div>
@@ -146,7 +147,7 @@ function Fisio() {
             </ol>
           </div>
           <div className="space-y-6">
-            <PhotoPlaceholder label="Detalle de trabajo con un bebé" ratio="square" />
+            <PhotoPlaceholder label="Pies de bebé" ratio="square" />
             <div className="rounded-2xl border border-primary/25 bg-primary/5 p-6 text-sm leading-relaxed text-foreground">
               <p className="font-display text-lg text-primary">Nota importante</p>
               <p className="mt-2 text-muted-foreground">
