@@ -34,7 +34,7 @@ function Fisio() {
             <img
               src={anaAtendiendo.url}
               alt="Ana atendiendo en la consulta del HUG"
-              className="relative w-full rounded-2xl object-cover"
+              className="relative aspect-[4/3] w-full rounded-2xl object-cover"
             />
           </div>
           <div>
