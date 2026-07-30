@@ -82,17 +82,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Ana M. Rey: fisioterapeuta especializada en control postural y neurodesarrollo. También escritora bajo el heterónimo Mia Millery.",
+          "Dos mundos que conviven: la consulta clínica de Ana M. Rey y sus libros para entender la infancia y el cuerpo.",
       },
       { name: "author", content: "Ana Muiño" },
       { property: "og:title", content: "Ana Muiño — Fisioterapeuta y escritora" },
       {
         property: "og:description",
         content:
-          "Dos mundos, una misma mirada al cuerpo y a la infancia: consulta clínica y libros.",
+          "Dos mundos que conviven: la consulta clínica de Ana M. Rey y sus libros para entender la infancia y el cuerpo.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Ana Muiño — Fisioterapeuta y escritora" },
+      { name: "twitter:description", content: "Dos mundos que conviven: la consulta clínica de Ana M. Rey y sus libros para entender la infancia y el cuerpo." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e974f232-9587-4d2f-8877-5f703fb7cef7/id-preview-a97c6a00--5fcad3e9-5ae9-4a19-9b27-db2bf870a60e.lovable.app-1785414174065.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e974f232-9587-4d2f-8877-5f703fb7cef7/id-preview-a97c6a00--5fcad3e9-5ae9-4a19-9b27-db2bf870a60e.lovable.app-1785414174065.png" },
     ],
     links: [
       {
