@@ -133,7 +133,7 @@ function Index() {
             </p>
           </div>
 
-          <div className="grid gap-12 md:grid-cols-[1fr_1.25fr]">
+          <div className="grid items-start gap-12 md:grid-cols-[1.15fr_1fr]">
             <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
               <p>
                 Soy Ana Muiño, fisioterapeuta y osteópata especializada en
@@ -166,21 +166,28 @@ function Index() {
               </p>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
-              {ABOUT_PILLARS.map((p) => (
-                <div
-                  key={p.title}
-                  className="rounded-2xl border border-border bg-background p-6"
-                >
-                  <p className="font-display text-xl text-primary">
-                    {p.title}
-                  </p>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {p.body}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <img
+              src={anaQuienSoy.url}
+              alt="Ana Muiño riendo mientras sostiene una pila de libros"
+              className="w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="mt-14 grid gap-4 sm:grid-cols-3">
+            {ABOUT_PILLARS.map((p) => (
+              <div
+                key={p.title}
+                className="rounded-2xl border border-border bg-background p-5"
+              >
+                <p className="font-display text-base text-primary">
+                  {p.title}
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {p.body}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
