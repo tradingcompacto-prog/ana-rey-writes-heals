@@ -56,7 +56,7 @@ function Mia() {
 
       <section className="bg-secondary/40">
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">
-          <AmanecerDivider connector="calma" label="Calma" className="mb-6" />
+          <AmanecerDivider connector="calma" className="mb-6" />
           <p className="text-xs uppercase tracking-[0.28em] text-primary">
             Obra
           </p>
