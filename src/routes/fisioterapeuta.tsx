@@ -62,7 +62,7 @@ function Fisio() {
 
       <section className="bg-secondary/40">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          <AmanecerDivider connector="calma" label="Calma · respiración serena" className="mb-8" />
+          <AmanecerDivider connector="calma" className="mb-8" />
           <p className="text-xs uppercase tracking-[0.28em] text-primary">
             Especialización
           </p>
