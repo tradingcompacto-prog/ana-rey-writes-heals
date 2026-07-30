@@ -7,6 +7,7 @@ import {
   MiaMillerySignature,
 } from "@/components/brand/BrandMarks";
 import dosMundosIcon from "@/assets/dos-mundos.png.asset.json";
+import anaRetratoHome from "@/assets/ana-retrato-home.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -68,10 +69,10 @@ function Index() {
               className="wood-grain absolute -inset-4 -z-0 rounded-2xl opacity-90"
               aria-hidden
             />
-            <PhotoPlaceholder
-              label="Retrato profesional de Ana en consulta"
-              ratio="portrait"
-              className="relative shadow-xl shadow-primary/10"
+            <img
+              src={anaRetratoHome.url}
+              alt="Ana Muiño con una taza roja y su libro Muñeca de Papel"
+              className="relative w-full rounded-2xl object-cover shadow-xl shadow-primary/10"
             />
           </div>
         </div>
