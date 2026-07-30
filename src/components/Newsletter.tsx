@@ -27,7 +27,11 @@ export function Newsletter({ variant = "light" }: Props) {
     >
       <div className="mx-auto grid max-w-5xl gap-10 px-6 py-20 md:grid-cols-[1.1fr_1fr] md:items-start">
         <div>
-          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-primary">
+          <p
+            className={`mb-3 text-xs font-medium uppercase tracking-widest ${
+              isGarnet ? "text-primary-foreground/80" : "text-primary"
+            }`}
+          >
             NEWSLETTER semanal
           </p>
           <h2 className="font-display text-2xl md:text-3xl">
