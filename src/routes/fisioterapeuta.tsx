@@ -185,15 +185,15 @@ const SPECIALTIES = [
 
 const TRAINING = [
   {
-    title: "Fisioterapia",
+    title: "Fisioterapia (2006-2009)",
     school: "Universidade da Coruña (UDC)",
   },
   {
-    title: "Osteopatía",
+    title: "Osteopatía (2009-2015)",
     school: "Escuela del Concepto Osteopático",
   },
   {
-    title: "Hypnoparto",
+    title: "Preparación al parto",
     school: "Hypnobirthing Método Mongan",
   },
   {
