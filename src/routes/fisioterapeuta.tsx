@@ -63,10 +63,10 @@ function Fisio() {
         <div className="mx-auto max-w-6xl px-6 py-20">
           <AmanecerDivider connector="calma" className="mb-8" />
           <p className="text-xs uppercase tracking-[0.28em] text-primary">
-            Especialización
+            Áreas de trabajo
           </p>
           <h2 className="mt-4 max-w-3xl font-display text-3xl md:text-4xl">
-            Control postural y neurodesarrollo, a cualquier edad.
+            Acompaño procesos de cuerpo y movimiento desde diferentes abordajes.
           </h2>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
