@@ -25,7 +25,6 @@ export const Route = createFileRoute("/contacto")({
 const schema = z.object({
   name: z.string().trim().min(1, "Introduce tu nombre").max(100),
   email: z.string().trim().email("Correo no válido").max(255),
-  topic: z.enum(["libros", "neurodesarrollo", "duda", "otro"]),
   message: z.string().trim().min(10, "Cuéntame un poco más").max(1500),
 });
 
@@ -39,7 +38,6 @@ function Contacto() {
     const parsed = schema.safeParse({
       name: form.get("name"),
       email: form.get("email"),
-      topic: form.get("topic"),
       message: form.get("message"),
     });
     if (!parsed.success) {
@@ -66,8 +64,9 @@ function Contacto() {
           Escríbeme.
         </h1>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          Este formulario es para que me escribas sobre los libros, neurodesarrollo
-          o dudas puntuales. Léelo con calma:
+          Este formulario es para que me escribas. Leer, no solo libros, sino
+          también tus dudas, opiniones e inquietudes, también forma parte de mi
+          aprendizaje.
         </p>
 
         <div className="mt-8 rounded-2xl border border-primary/25 bg-primary/5 p-6 text-sm leading-relaxed">
@@ -120,18 +119,6 @@ function Contacto() {
               />
             </Field>
           </div>
-          <Field label="Motivo" error={errors.topic}>
-            <select
-              name="topic"
-              defaultValue="libros"
-              className="w-full rounded-md border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
-            >
-              <option value="libros">Consulta sobre los libros</option>
-              <option value="neurodesarrollo">Neurodesarrollo</option>
-              <option value="duda">Duda puntual</option>
-              <option value="otro">Otro</option>
-            </select>
-          </Field>
           <Field label="Mensaje" error={errors.message}>
             <textarea
               name="message"
