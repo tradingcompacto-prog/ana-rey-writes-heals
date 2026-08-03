@@ -47,9 +47,8 @@ function Fisio() {
               Mi mirada al cuerpo empieza en la cuna.
             </h1>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Desde hace 16 años acompaño a familias y pacientes a entender cómo
-              se construye el movimiento humano. Trabajo con bebés, niños y
-              adultos con foco en control postural y neurodesarrollo.
+              Desde hace más de 16 años acompaño a familias y pacientes a entender
+              cómo se construye el movimiento humano.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               Actualmente ejerzo en el Hospital Universitario de Ginebra (HUG),
