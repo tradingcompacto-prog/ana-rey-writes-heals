@@ -38,7 +38,6 @@ function Contacto() {
     const parsed = schema.safeParse({
       name: form.get("name"),
       email: form.get("email"),
-      topic: form.get("topic"),
       message: form.get("message"),
     });
     if (!parsed.success) {
