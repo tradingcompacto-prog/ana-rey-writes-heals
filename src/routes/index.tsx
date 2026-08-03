@@ -94,7 +94,7 @@ function Index() {
           <WorldCard
             eyebrow="Mundo 01"
             title="La fisioterapeuta"
-            body="Control postural y neurodesarrollo, con 16 años de trayectoria clínica en el Hospital Universitario de Ginebra. Atiendo en el hospital — aquí comparto quién soy y a qué me dedico."
+            body="Control postural y conexión cuerpo-mente con más de 16 años de trayectoria clínica. Atiendo en el hospital, aquí comparto quién soy y a qué me dedico."
             cta="Conocer mi trayectoria"
             to="/fisioterapeuta"
             accent
