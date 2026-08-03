@@ -102,7 +102,7 @@ function Index() {
           <WorldCard
             eyebrow="Mundo 02 · ¿Sabías esto?"
             title="También soy escritora"
-            body="Como Mia Millery escribo ficción — thrillers psicológicos con mucho de resiliencia y de todo lo que no se dice en voz alta. La misma curiosidad por la mente, contada de otra forma."
+            body="Como Mia Millery escribo ficción — novelas con mucho de resiliencia y de todo lo que no se dice en voz alta. La misma curiosidad por la mente, contada de otra forma."
             cta="Descubrir mis libros"
             to="/mia-millery"
           />
