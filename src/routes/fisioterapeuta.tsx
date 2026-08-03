@@ -193,8 +193,8 @@ const TRAINING = [
     school: "Escuela del Concepto Osteopático",
   },
   {
-    title: "Preparación al parto",
-    school: "Hypnobirthing Método Mongan",
+    title: "Preparación al parto (Hypnobirthing®)",
+    school: "Método Mongan",
   },
   {
     title: "Reeducación del suelo pélvico",
