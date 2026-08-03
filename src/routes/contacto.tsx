@@ -64,8 +64,9 @@ function Contacto() {
           Escríbeme.
         </h1>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          Este formulario es para que me escribas sobre los libros, neurodesarrollo
-          o dudas puntuales. Léelo con calma:
+          Este formulario es para que me escribas. Leer, no solo libros, sino
+          también tus dudas, opiniones e inquietudes, también forma parte de mi
+          aprendizaje.
         </p>
 
         <div className="mt-8 rounded-2xl border border-primary/25 bg-primary/5 p-6 text-sm leading-relaxed">
