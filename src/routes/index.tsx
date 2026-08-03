@@ -136,12 +136,9 @@ function Index() {
           <div className="grid items-start gap-12 md:grid-cols-[1.15fr_1fr]">
             <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
               <p>
-                Soy Ana Muiño, fisioterapeuta y osteópata especializada en
-                control postural y neurodesarrollo, con 16 años de práctica
-                clínica, incluyendo mi paso por el Hospital Universitario de
-                Ginebra (HUG). Acompaño a bebés, niños, mujeres embarazadas y
-                adultos en procesos de recuperación, aprendizaje y cuidado
-                corporal.
+                Soy Ana, fisioterapeuta y osteópata. Con más de 16 años
+                acompañando a bebés, niños, mujeres embarazadas y adultos en
+                proceso de recuperación, aprendizaje y cuidado corporal.
               </p>
               <p>
                 No solo trato — enseño. Mi objetivo es que entiendas tu cuerpo y
