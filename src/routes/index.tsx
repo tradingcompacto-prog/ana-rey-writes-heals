@@ -45,9 +45,9 @@ function Index() {
               <span className="text-primary">desde el nacimiento.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-              Llevo 16 años de práctica clínica especializada en control postural
-              y neurodesarrollo — bebés, niños y adultos. Actualmente en el
-              Hospital Universitario de Ginebra (HUG).
+              Llevo desde 2009 acompañando a bebés, niños y adultos a través de
+              la práctica clínica especializada en control postural. Actualmente
+              en el Hospital Universitario de Ginebra (HUG).
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
