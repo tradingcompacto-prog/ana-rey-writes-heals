@@ -119,18 +119,6 @@ function Contacto() {
               />
             </Field>
           </div>
-          <Field label="Motivo" error={errors.topic}>
-            <select
-              name="topic"
-              defaultValue="libros"
-              className="w-full rounded-md border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
-            >
-              <option value="libros">Consulta sobre los libros</option>
-              <option value="neurodesarrollo">Neurodesarrollo</option>
-              <option value="duda">Duda puntual</option>
-              <option value="otro">Otro</option>
-            </select>
-          </Field>
           <Field label="Mensaje" error={errors.message}>
             <textarea
               name="message"
