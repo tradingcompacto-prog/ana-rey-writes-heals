@@ -170,16 +170,16 @@ function Fisio() {
 
 const SPECIALTIES = [
   {
-    title: "Bebés y primera infancia",
-    body: "Acompaño el desarrollo motor temprano, plagiocefalias, tortícolis, retrasos madurativos y dificultades de sostén.",
+    title: "Rehabilitación neurológica y control postural",
+    body: "Acompaño procesos de recuperación tras lesiones o condiciones neurológicas, trabajando el movimiento funcional, el equilibrio y la postura como parte del día a día.",
   },
   {
-    title: "Niños y adolescentes",
-    body: "Abordo trastornos del neurodesarrollo, coordinación, tono muscular y postura en la etapa escolar.",
+    title: "Embarazo, preparación al parto y reeducación de suelo pélvico",
+    body: "Soporte durante la gestación, preparación para el nacimiento y acompañamiento posterior en la recuperación del suelo pélvico.",
   },
   {
-    title: "Adultos",
-    body: "Trato la rehabilitación neurológica, el control postural, el dolor crónico y el trabajo osteopático integrativo.",
+    title: "Gestión del dolor crónico",
+    body: "Trabajo osteopático integrativo, educación terapéutica y conexión cuerpo-mente para quienes viven con dolor persistente.",
   },
 ];
 
