@@ -47,9 +47,8 @@ function Fisio() {
               Mi mirada al cuerpo empieza en la cuna.
             </h1>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Desde hace 16 años acompaño a familias y pacientes a entender cómo
-              se construye el movimiento humano. Trabajo con bebés, niños y
-              adultos con foco en control postural y neurodesarrollo.
+              Desde hace más de 16 años acompaño a familias y pacientes a entender
+              cómo se construye el movimiento humano.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               Actualmente ejerzo en el Hospital Universitario de Ginebra (HUG),
@@ -64,10 +63,10 @@ function Fisio() {
         <div className="mx-auto max-w-6xl px-6 py-20">
           <AmanecerDivider connector="calma" className="mb-8" />
           <p className="text-xs uppercase tracking-[0.28em] text-primary">
-            Especialización
+            Áreas de trabajo
           </p>
           <h2 className="mt-4 max-w-3xl font-display text-3xl md:text-4xl">
-            Control postural y neurodesarrollo, a cualquier edad.
+            Acompaño procesos de cuerpo y movimiento desde diferentes abordajes.
           </h2>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -171,30 +170,30 @@ function Fisio() {
 
 const SPECIALTIES = [
   {
-    title: "Bebés y primera infancia",
-    body: "Acompaño el desarrollo motor temprano, plagiocefalias, tortícolis, retrasos madurativos y dificultades de sostén.",
+    title: "Rehabilitación neurológica y control postural",
+    body: "Acompaño procesos de recuperación tras lesiones o condiciones neurológicas, trabajando el movimiento funcional, el equilibrio y la postura como parte del día a día.",
   },
   {
-    title: "Niños y adolescentes",
-    body: "Abordo trastornos del neurodesarrollo, coordinación, tono muscular y postura en la etapa escolar.",
+    title: "Embarazo, preparación al parto y reeducación de suelo pélvico",
+    body: "Soporte durante la gestación, preparación para el nacimiento y acompañamiento posterior en la recuperación del suelo pélvico.",
   },
   {
-    title: "Adultos",
-    body: "Trato la rehabilitación neurológica, el control postural, el dolor crónico y el trabajo osteopático integrativo.",
+    title: "Gestión del dolor crónico",
+    body: "Trabajo osteopático integrativo, educación terapéutica y conexión cuerpo-mente para quienes viven con dolor persistente.",
   },
 ];
 
 const TRAINING = [
   {
-    title: "Fisioterapia",
+    title: "Fisioterapia (2006-2009)",
     school: "Universidade da Coruña (UDC)",
   },
   {
-    title: "Osteopatía",
+    title: "Osteopatía (2009-2015)",
     school: "Escuela del Concepto Osteopático",
   },
   {
-    title: "Hypnoparto",
+    title: "Preparación al parto",
     school: "Hypnobirthing Método Mongan",
   },
   {
