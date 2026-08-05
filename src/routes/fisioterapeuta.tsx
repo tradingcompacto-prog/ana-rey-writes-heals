@@ -185,7 +185,7 @@ const SPECIALTIES = [
   },
   {
     title: "Dolor crónico y conexión cuerpo-mente",
-    body: "Trabajo osteopático integrativo, educación terapéutica y conexión cuerpo-mente para personas y familias que conviven con dolor persistente.",
+    body: "Trabajo osteopático integrativo, educación terapéutica y conexión cuerpo-mente para quienes viven con dolor persistente.",
   },
 ];
 
