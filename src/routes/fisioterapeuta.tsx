@@ -177,7 +177,7 @@ function Fisio() {
 const SPECIALTIES = [
   {
     title: "Control postural y neurodesarrollo",
-    body: "Acompaño a bebés, niños y adultos en cómo se construye el movimiento, el equilibrio y la postura, siempre desde la mirada de la familia que está al lado.",
+    body: "Acompaño a bebés, niños y adultos en cómo se construye el movimiento, el equilibrio y la postura, con la familia como parte del proceso.",
   },
   {
     title: "Embarazo, preparación al parto y suelo pélvico",
