@@ -152,12 +152,12 @@ function Fisio() {
               loading="lazy"
             />
             <div className="rounded-2xl border border-primary/25 bg-primary/5 p-6 text-sm leading-relaxed text-foreground">
-              <p className="font-display text-lg text-primary">Una aclaración</p>
+              <p className="font-display text-lg text-primary">Nota importante</p>
               <p className="mt-2 text-muted-foreground">
-                Esta web no es consulta: no pido citas ni atiendo de forma
-                privada aquí. Mi trabajo clínico transcurre dentro del
-                Hospital Universitario de Ginebra (HUG). Aquí solo me presento
-                para que sepas quién soy y a qué me dedico.
+                Esta página es solo una carta de presentación profesional. No
+                atiendo consulta privada ni gestiono citas clínicas desde aquí:
+                mi práctica actual transcurre dentro del Hospital Universitario
+                de Ginebra (HUG).
               </p>
               <Link
                 to="/contacto"
