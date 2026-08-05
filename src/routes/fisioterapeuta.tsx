@@ -176,16 +176,16 @@ function Fisio() {
 
 const SPECIALTIES = [
   {
-    title: "Rehabilitación neurológica y control postural",
-    body: "Acompaño procesos de recuperación tras lesiones o condiciones neurológicas, trabajando el movimiento funcional, el equilibrio y la postura como parte del día a día.",
+    title: "Control postural y neurodesarrollo",
+    body: "Acompaño a bebés, niños y adultos en cómo se construye el movimiento, el equilibrio y la postura, siempre desde la mirada de la familia que está al lado.",
   },
   {
-    title: "Embarazo, preparación al parto y reeducación de suelo pélvico",
-    body: "Soporte durante la gestación, preparación para el nacimiento y acompañamiento posterior en la recuperación del suelo pélvico.",
+    title: "Embarazo, preparación al parto y suelo pélvico",
+    body: "Soporte para mujeres y familias durante la gestación, el nacimiento y la recuperación del suelo pélvico, conectando con el cuerpo en cada etapa.",
   },
   {
-    title: "Gestión del dolor crónico",
-    body: "Trabajo osteopático integrativo, educación terapéutica y conexión cuerpo-mente para quienes viven con dolor persistente.",
+    title: "Dolor crónico y conexión cuerpo-mente",
+    body: "Trabajo osteopático integrativo, educación terapéutica y herramientas para quienes viven con dolor persistente, también dentro del entorno familiar.",
   },
 ];
 
