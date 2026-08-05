@@ -97,7 +97,7 @@ export function Newsletter({ variant = "light" }: Props) {
                   : "bg-primary text-primary-foreground hover:bg-primary/90"
               }`}
             >
-              Quiero mi grado semanal →
+              Quiero mi paso semanal →
             </button>
           </div>
           <p
