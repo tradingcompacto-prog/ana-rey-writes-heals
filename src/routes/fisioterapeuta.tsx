@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Newsletter } from "@/components/Newsletter";
 import { AmanecerMark, AmanecerDivider } from "@/components/brand/BrandMarks";
 import anaAtendiendo from "@/assets/ana-atendiendo-hug.jpg.asset.json";
+import manosTerapia from "@/assets/manos-terapia.png.asset.json";
 
 export const Route = createFileRoute("/fisioterapeuta")({
   head: () => ({
@@ -145,7 +145,12 @@ function Fisio() {
             </ol>
           </div>
           <div className="space-y-6">
-            <PhotoPlaceholder label="Pies de bebé" ratio="square" />
+            <img
+              src={manosTerapia.url}
+              alt="Manos de terapeuta y paciente en un gesto de cuidado"
+              className="aspect-square w-full object-cover"
+              loading="lazy"
+            />
             <div className="rounded-2xl border border-primary/25 bg-primary/5 p-6 text-sm leading-relaxed text-foreground">
               <p className="font-display text-lg text-primary">Nota importante</p>
               <p className="mt-2 text-muted-foreground">
