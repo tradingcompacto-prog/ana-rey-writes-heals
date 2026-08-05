@@ -35,7 +35,7 @@ export function Newsletter({ variant = "light" }: Props) {
             NEWSLETTER semanal
           </p>
           <h2 className="font-display text-2xl md:text-3xl">
-            Cada semana, un 1 % hacia un cuerpo que entiendes mejor
+            Cada semana, un 1 % hacia una familia que entiende su cuerpo
           </h2>
           <div
             className={`mt-4 space-y-3 text-sm leading-relaxed ${
@@ -47,13 +47,18 @@ export function Newsletter({ variant = "light" }: Props) {
               paso, con pequeños gestos que se suman sin que apenas te des
               cuenta.
             </p>
-            <p>Cada semana te mando dos cosas, cortitas:</p>
+            <p>
+              Cada semana te mando dos cosas, cortitas, pensadas para que las
+              puedas compartir con tu familia:
+            </p>
             <ul className="list-disc space-y-1 pl-5">
               <li>
-                Una reflexión que te haga mirar tu cuerpo de otra forma.
+                Una reflexión que os haga mirar el cuerpo de otra forma, a
+                padres e hijos por igual.
               </li>
               <li>
-                Y un solo ejercicio, simple, para practicar esa semana.
+                Y un solo ejercicio, simple, para practicar juntos en casa esa
+                semana.
               </li>
             </ul>
             <p>
