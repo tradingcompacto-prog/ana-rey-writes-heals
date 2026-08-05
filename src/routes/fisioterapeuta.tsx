@@ -177,7 +177,7 @@ function Fisio() {
 const SPECIALTIES = [
   {
     title: "Control postural y neurodesarrollo",
-    body: "Acompaño a bebés, niños y adultos en cómo se construye el movimiento, el equilibrio y la postura, con la familia como parte del proceso.",
+    body: "Acompaño a bebés, niños y adultos en cómo se construye el movimiento, el equilibrio y la postura.",
   },
   {
     title: "Embarazo, preparación al parto y suelo pélvico",
@@ -185,7 +185,7 @@ const SPECIALTIES = [
   },
   {
     title: "Dolor crónico y conexión cuerpo-mente",
-    body: "Trabajo osteopático integrativo, educación terapéutica y conexión cuerpo-mente para personas y familias que conviven con dolor persistente.",
+    body: "Trabajo osteopático integrativo, educación terapéutica y conexión cuerpo-mente para quienes viven con dolor persistente.",
   },
 ];
 
