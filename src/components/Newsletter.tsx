@@ -35,7 +35,7 @@ export function Newsletter({ variant = "light" }: Props) {
             NEWSLETTER semanal
           </p>
           <h2 className="font-display text-2xl md:text-3xl">
-            Cada semana, un grado hacia un cuerpo que entiendes mejor
+            Cada semana, un 1 % hacia un cuerpo que entiendes mejor
           </h2>
           <div
             className={`mt-4 space-y-3 text-sm leading-relaxed ${
@@ -43,8 +43,9 @@ export function Newsletter({ variant = "light" }: Props) {
             }`}
           >
             <p>
-              No hace falta cambiarlo todo de golpe. El cuerpo mejora igual que
-              se mueve una articulación: grado a grado, sin prisa.
+              No hace falta cambiarlo todo de golpe. El cuerpo mejora paso a
+              paso, con pequeños gestos que se suman sin que apenas te des
+              cuenta.
             </p>
             <p>Cada semana te mando dos cosas, cortitas:</p>
             <ul className="list-disc space-y-1 pl-5">
@@ -63,7 +64,7 @@ export function Newsletter({ variant = "light" }: Props) {
               Y de vez en cuando, algún apunte sobre mis novelas — porque
               escribir también es parte de cómo entiendo el cuerpo y la mente.
             </p>
-            <p>Así, grado a grado, sin agobios ni promesas imposibles.</p>
+            <p>Así, un 1 % cada semana, sin agobios ni promesas imposibles.</p>
           </div>
         </div>
         <form onSubmit={onSubmit} className="w-full md:pt-12">
