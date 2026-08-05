@@ -19,6 +19,7 @@ export function Newsletter({ variant = "light" }: Props) {
 
   return (
     <section
+      id="newsletter"
       className={
         isGarnet
           ? "bg-primary text-primary-foreground"

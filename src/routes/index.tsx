@@ -50,12 +50,12 @@ function Index() {
               en el Hospital Universitario de Ginebra (HUG).
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                to="/fisioterapeuta"
+              <a
+                href="#newsletter"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
-                Conocer mi trabajo clínico
-              </Link>
+                Apúntate a mi newsletter
+              </a>
               <Link
                 to="/mia-millery"
                 className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
