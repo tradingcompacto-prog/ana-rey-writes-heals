@@ -36,7 +36,7 @@ export function Newsletter({ variant = "light" }: Props) {
             NEWSLETTER semanal
           </p>
           <h2 className="font-display text-2xl md:text-3xl">
-            Cada semana, un 1 % hacia una familia que entiende su cuerpo
+            Cada semana, un paso más hacia un cuerpo más capaz.
           </h2>
           <div
             className={`mt-4 space-y-3 text-sm leading-relaxed ${
@@ -45,7 +45,7 @@ export function Newsletter({ variant = "light" }: Props) {
           >
             <p>
               No hace falta cambiarlo todo de golpe. El cuerpo mejora paso a
-              paso, con pequeños gestos que se suman sin que apenas te des
+              paso, sumando un 1% con cada pequeño gesto, sin que te des
               cuenta.
             </p>
             <p>
