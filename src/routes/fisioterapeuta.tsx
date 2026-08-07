@@ -221,7 +221,7 @@ const TIMELINE = [
   {
     year: "Formación continua",
     title: "Osteopatía y neurodesarrollo",
-    body: "Me formo específicamente en abordajes centrados en el sistema nervioso central y el desarrollo motor infantil.",
+    body: "Me formo específicamente en abordajes centrados en el sistema nervioso y el desarrollo motor.",
   },
   {
     year: "+16 años",
