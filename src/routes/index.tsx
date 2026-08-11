@@ -129,7 +129,7 @@ function Index() {
             </h2>
           </div>
 
-          <div className="grid items-stretch gap-12 md:grid-cols-[1.15fr_1fr]">
+          <div className="grid items-start gap-12 md:grid-cols-[1.3fr_0.7fr]">
             <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
               <p>
                 Soy Ana, fisioterapeuta y osteópata — pero hay algo que no se
@@ -158,7 +158,7 @@ function Index() {
               </p>
             </div>
 
-            <div className="overflow-hidden">
+            <div className="overflow-hidden md:aspect-[4/5]">
               <img
                 src={familiaSobreMi.url}
                 alt="Ana con su familia, mirando a un recién nacido"
