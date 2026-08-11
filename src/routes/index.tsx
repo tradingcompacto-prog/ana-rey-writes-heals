@@ -189,20 +189,6 @@ function Index() {
   );
 }
 
-const ABOUT_PILLARS = [
-  {
-    title: "Rigor",
-    body: "Todo lo que digo está respaldado por la ciencia y la experiencia clínica.",
-  },
-  {
-    title: "Claridad",
-    body: "Información compleja, explicada sin sacrificar la verdad.",
-  },
-  {
-    title: "Calma sobre alarma",
-    body: "Reduzco la ansiedad. Nunca la genero.",
-  },
-];
 
 function WorldCard({
   eyebrow,
