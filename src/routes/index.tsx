@@ -117,7 +117,7 @@ function Index() {
         </p>
       </section>
 
-      {/* Quién soy */}
+      {/* Sobre mí */}
       <section className="border-y border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="mb-12 text-center">
@@ -125,41 +125,36 @@ function Index() {
               Sobre mí
             </p>
             <h2 className="mt-4 font-display text-3xl md:text-4xl">
-              Quién soy
+              Ser madre me cambió también como profesional
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              La fisio que conecta el cuerpo desde el primer día de vida hasta
-              la adultez
-            </p>
           </div>
 
           <div className="grid items-start gap-12 md:grid-cols-[1.15fr_1fr]">
             <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
               <p>
-                Soy Ana, fisioterapeuta y osteópata. Con más de 16 años
-                acompañando a bebés, niños, mujeres embarazadas y adultos en
-                proceso de recuperación, aprendizaje y cuidado corporal.
+                Soy Ana, fisioterapeuta y osteópata — pero hay algo que no se
+                ve en un currículum y que lo cambió todo: ser madre.
               </p>
               <p>
-                No solo trato — enseño. Mi objetivo es que entiendas tu cuerpo y
-                el de tu familia lo suficiente como para cuidarlo con criterio
-                propio, no con miedo ni con reglas impuestas. Hablo desde la
-                evidencia y desde 16 años de experiencia real, sin alarmar y
-                sin simplificar en exceso.
-              </p>
-              <blockquote className="border-l-2 border-primary pl-6 font-display text-xl text-foreground">
-                "El cuerpo se aprende. Y se puede enseñar."
-              </blockquote>
-              <p>
-                Ejerzo en el Hospital Universitario de Ginebra — no paso
-                consulta a través de esta web, es simplemente mi carta de
-                presentación. Si tienes una duda puntual, puedes escribirme.
+                Como toda maternidad, la mía revolucionó mi vida. Por un lado,
+                me llevó a aplicar todo lo que sabía al desarrollo de mis propios
+                hijos. Por otro, me hizo ponerme en el lugar de otros padres que
+                no tienen mi formación y que, muchas veces, se sienten perdidos
+                — como me sentí yo alguna vez, a pesar de ser fisio.
               </p>
               <p>
-                Y además de fisio, soy escritora. Fisioterapeuta y escritora —
-                no una cosa u otra. Todo lo que escribo, en consulta o en mis
-                novelas como Mia Millery, parte del mismo interés: entender el
-                cuerpo y la mente.
+                Esa fue la grieta que me abrió los ojos: si yo, con 16 años de
+                trayectoria clínica, podía sentirme desorientada como madre,
+                ¿qué le pasa a una familia sin ese bagaje?
+              </p>
+              <p>
+                Ahí nació mi verdadero propósito.
+              </p>
+              <p>
+                No quiero que un profesional resuelva por las familias — quiero
+                que las familias entiendan y aprendan, para que puedan decidir
+                con su propio criterio. Ser madre no me alejó de mi trabajo: le
+                dio sentido.
               </p>
             </div>
 
