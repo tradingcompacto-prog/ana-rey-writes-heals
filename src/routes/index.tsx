@@ -8,7 +8,7 @@ import {
 } from "@/components/brand/BrandMarks";
 import dosMundosIcon from "@/assets/dos-mundos.png.asset.json";
 import anaRetratoHome from "@/assets/ana-retrato-home.jpg.asset.json";
-import anaQuienSoy from "@/assets/ana-quien-soy.png.asset.json";
+import familiaSobreMi from "@/assets/familia-sobre-mi.webp.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -159,27 +159,11 @@ function Index() {
             </div>
 
             <img
-              src={anaQuienSoy.url}
-              alt="Ana Muiño riendo mientras sostiene una pila de libros"
+              src={familiaSobreMi.url}
+              alt="Ana con su familia, mirando a un recién nacido"
               className="w-full object-cover"
               loading="lazy"
             />
-          </div>
-
-          <div className="mt-14 grid gap-4 sm:grid-cols-3">
-            {ABOUT_PILLARS.map((p) => (
-              <div
-                key={p.title}
-                className="rounded-2xl border border-border bg-background p-5"
-              >
-                <p className="font-display text-base text-primary">
-                  {p.title}
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {p.body}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -204,20 +188,6 @@ function Index() {
   );
 }
 
-const ABOUT_PILLARS = [
-  {
-    title: "Rigor",
-    body: "Todo lo que digo está respaldado por la ciencia y la experiencia clínica.",
-  },
-  {
-    title: "Claridad",
-    body: "Información compleja, explicada sin sacrificar la verdad.",
-  },
-  {
-    title: "Calma sobre alarma",
-    body: "Reduzco la ansiedad. Nunca la genero.",
-  },
-];
 
 function WorldCard({
   eyebrow,
