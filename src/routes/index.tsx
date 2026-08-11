@@ -8,7 +8,6 @@ import {
 } from "@/components/brand/BrandMarks";
 import dosMundosIcon from "@/assets/dos-mundos.png.asset.json";
 import anaRetratoHome from "@/assets/ana-retrato-home.jpg.asset.json";
-import anaQuienSoy from "@/assets/ana-quien-soy.png.asset.json";
 import familiaSobreMi from "@/assets/familia-sobre-mi.webp.asset.json";
 
 export const Route = createFileRoute("/")({
