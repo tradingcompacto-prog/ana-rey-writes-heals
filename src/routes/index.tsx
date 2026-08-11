@@ -160,27 +160,11 @@ function Index() {
             </div>
 
             <img
-              src={anaQuienSoy.url}
-              alt="Ana Muiño riendo mientras sostiene una pila de libros"
+              src={familiaSobreMi.url}
+              alt="Ana con su familia, mirando a un recién nacido"
               className="w-full object-cover"
               loading="lazy"
             />
-          </div>
-
-          <div className="mt-14 grid gap-4 sm:grid-cols-3">
-            {ABOUT_PILLARS.map((p) => (
-              <div
-                key={p.title}
-                className="rounded-2xl border border-border bg-background p-5"
-              >
-                <p className="font-display text-base text-primary">
-                  {p.title}
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {p.body}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
