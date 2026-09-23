@@ -160,7 +160,12 @@ function SiteHeader() {
   const activeCls = "text-primary font-medium";
   return (
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-center px-6 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <Link to="/" className="flex items-center gap-2.5">
+          <span className="font-display text-lg tracking-tight text-primary">
+            Ana&nbsp;M.&nbsp;Rey
+          </span>
+        </Link>
         <nav className="hidden items-center gap-8 md:flex">
           <Link to="/" activeOptions={{ exact: true }} activeProps={{ className: activeCls }} className={linkBase}>
             Inicio
