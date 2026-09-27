@@ -73,50 +73,80 @@ export function Newsletter({ variant = "light" }: Props) {
             </p>
           </div>
         </div>
-        <form onSubmit={onSubmit} className="w-full md:pt-12">
-          <label htmlFor="nl-email" className="sr-only">
-            Correo electrónico
-          </label>
+        {status === "ok" ? (
           <div
-            className={`flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-2 sm:rounded-full sm:border sm:p-1.5 ${
+            className={`w-full rounded-2xl border p-8 text-center md:pt-12 ${
               isGarnet
-                ? "sm:border-primary-foreground/30 sm:bg-primary-foreground/5"
-                : "sm:border-border sm:bg-background"
+                ? "border-primary-foreground/30 bg-primary-foreground/5"
+                : "border-border bg-background"
             }`}
-          >
-            <input
-              id="nl-email"
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="tu@correo.com"
-              className={`w-full flex-1 rounded-full bg-transparent px-5 py-3 text-sm outline-none placeholder:opacity-60 ${
-                isGarnet ? "text-primary-foreground" : "text-foreground"
-              }`}
-            />
-            <button
-              type="submit"
-              className={`rounded-full px-6 py-3 text-sm font-medium transition-colors ${
-                isGarnet
-                  ? "bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-                  : "bg-primary text-primary-foreground hover:bg-primary/90"
-              }`}
-            >
-              Quiero mi paso semanal →
-            </button>
-          </div>
-          <p
-            className={`mt-3 min-h-[1.25rem] text-xs ${
-              isGarnet ? "text-primary-foreground/80" : "text-muted-foreground"
-            }`}
+            role="status"
             aria-live="polite"
           >
-            {status === "ok" && "Gracias. Revisa tu bandeja para confirmar."}
-            {status === "error" && "Introduce un correo válido, por favor."}
-            {status === "idle" && "Un email a la semana. Sin spam. Cancelas cuando quieras."}
-          </p>
-        </form>
+            <p className="font-display text-2xl md:text-3xl">
+              ¡Gracias por suscribirte!
+            </p>
+            <p
+              className={`mt-3 text-sm leading-relaxed ${
+                isGarnet
+                  ? "text-primary-foreground/85"
+                  : "text-muted-foreground"
+              }`}
+            >
+              Ya estás dentro. Revisa tu bandeja de entrada: te acabo de
+              enviar el Body scan, tu primera práctica guiada. Nos leemos la
+              semana que viene.
+            </p>
+          </div>
+        ) : (
+          <form onSubmit={onSubmit} className="w-full md:pt-12">
+            <label htmlFor="nl-email" className="sr-only">
+              Correo electrónico
+            </label>
+            <div
+              className={`flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-2 sm:rounded-full sm:border sm:p-1.5 ${
+                isGarnet
+                  ? "sm:border-primary-foreground/30 sm:bg-primary-foreground/5"
+                  : "sm:border-border sm:bg-background"
+              }`}
+            >
+              <input
+                id="nl-email"
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="tu@correo.com"
+                className={`w-full flex-1 rounded-full bg-transparent px-5 py-3 text-sm outline-none placeholder:opacity-60 ${
+                  isGarnet ? "text-primary-foreground" : "text-foreground"
+                }`}
+              />
+              <button
+                type="submit"
+                className={`rounded-full px-6 py-3 text-sm font-medium transition-colors ${
+                  isGarnet
+                    ? "bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                    : "bg-primary text-primary-foreground hover:bg-primary/90"
+                }`}
+              >
+                Quiero mi paso semanal →
+              </button>
+            </div>
+            <p
+              className={`mt-3 min-h-[1.25rem] text-xs ${
+                isGarnet
+                  ? "text-primary-foreground/80"
+                  : "text-muted-foreground"
+              }`}
+              aria-live="polite"
+            >
+              {status === "error" &&
+                "Introduce un correo válido, por favor."}
+              {status === "idle" &&
+                "Un email a la semana. Sin spam. Cancelas cuando quieras."}
+            </p>
+          </form>
+        )}
       </div>
     </section>
   );
