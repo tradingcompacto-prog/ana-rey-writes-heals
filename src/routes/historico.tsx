@@ -51,7 +51,7 @@ const NUMEROS: Numero[] = [
 
 function Historico() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="bg-background">
       <section className="mx-auto max-w-4xl px-6 pt-20 pb-8 text-center">
         <p className="text-xs font-medium uppercase tracking-[0.3em] text-primary">
           Newsletter · números anteriores
@@ -82,7 +82,7 @@ function Historico() {
                   {numero.n}
                 </span>
                 <div>
-                  <p className="mb-1 text-xs uppercase tracking-widest text-muted-foreground">
+                  <p className="mb-1 whitespace-nowrap text-xs uppercase tracking-widest text-muted-foreground">
                     {numero.mes}
                   </p>
                   <h2
@@ -100,10 +100,8 @@ function Historico() {
                 </div>
               </div>
               <p
-                className={`mt-4 max-w-sm text-sm italic leading-relaxed text-muted-foreground md:mt-0 md:max-w-none md:max-w-md ${
-                  numero.disponible
-                    ? "hidden md:block opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                    : ""
+                className={`mt-4 max-w-sm text-sm italic leading-relaxed text-muted-foreground md:mt-0 md:text-right ${
+                  numero.disponible ? "" : "text-muted-foreground/60"
                 }`}
               >
                 {numero.extracto}
