@@ -112,7 +112,8 @@ function Historico() {
 
         <div className="mt-16 flex flex-col items-center">
           <Link
-            to="/#newsletter"
+            to="/"
+            hash="newsletter"
             className="border-b border-primary pb-1 text-[11px] font-semibold uppercase tracking-[0.3em] text-primary transition-colors hover:text-primary/80"
           >
             Quiero recibirla
