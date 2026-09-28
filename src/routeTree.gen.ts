@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as PoliticaDePrivacidadRouteImport } from './routes/politica-de-privacidad'
 import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cookies'
 import { Route as MiaMilleryRouteImport } from './routes/mia-millery'
+import { Route as HistoricoRouteImport } from './routes/historico'
 import { Route as FisioterapeutaRouteImport } from './routes/fisioterapeuta'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as AvisoLegalRouteImport } from './routes/aviso-legal'
@@ -30,6 +31,11 @@ const PoliticaDeCookiesRoute = PoliticaDeCookiesRouteImport.update({
 const MiaMilleryRoute = MiaMilleryRouteImport.update({
   id: '/mia-millery',
   path: '/mia-millery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HistoricoRoute = HistoricoRouteImport.update({
+  id: '/historico',
+  path: '/historico',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FisioterapeutaRoute = FisioterapeutaRouteImport.update({
@@ -58,6 +64,7 @@ export interface FileRoutesByFullPath {
   '/aviso-legal': typeof AvisoLegalRoute
   '/contacto': typeof ContactoRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
+  '/historico': typeof HistoricoRoute
   '/mia-millery': typeof MiaMilleryRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
@@ -67,6 +74,7 @@ export interface FileRoutesByTo {
   '/aviso-legal': typeof AvisoLegalRoute
   '/contacto': typeof ContactoRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
+  '/historico': typeof HistoricoRoute
   '/mia-millery': typeof MiaMilleryRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
@@ -77,6 +85,7 @@ export interface FileRoutesById {
   '/aviso-legal': typeof AvisoLegalRoute
   '/contacto': typeof ContactoRoute
   '/fisioterapeuta': typeof FisioterapeutaRoute
+  '/historico': typeof HistoricoRoute
   '/mia-millery': typeof MiaMilleryRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
@@ -88,6 +97,7 @@ export interface FileRouteTypes {
     | '/aviso-legal'
     | '/contacto'
     | '/fisioterapeuta'
+    | '/historico'
     | '/mia-millery'
     | '/politica-de-cookies'
     | '/politica-de-privacidad'
@@ -97,6 +107,7 @@ export interface FileRouteTypes {
     | '/aviso-legal'
     | '/contacto'
     | '/fisioterapeuta'
+    | '/historico'
     | '/mia-millery'
     | '/politica-de-cookies'
     | '/politica-de-privacidad'
@@ -106,6 +117,7 @@ export interface FileRouteTypes {
     | '/aviso-legal'
     | '/contacto'
     | '/fisioterapeuta'
+    | '/historico'
     | '/mia-millery'
     | '/politica-de-cookies'
     | '/politica-de-privacidad'
@@ -116,6 +128,7 @@ export interface RootRouteChildren {
   AvisoLegalRoute: typeof AvisoLegalRoute
   ContactoRoute: typeof ContactoRoute
   FisioterapeutaRoute: typeof FisioterapeutaRoute
+  HistoricoRoute: typeof HistoricoRoute
   MiaMilleryRoute: typeof MiaMilleryRoute
   PoliticaDeCookiesRoute: typeof PoliticaDeCookiesRoute
   PoliticaDePrivacidadRoute: typeof PoliticaDePrivacidadRoute
@@ -142,6 +155,13 @@ declare module '@tanstack/react-router' {
       path: '/mia-millery'
       fullPath: '/mia-millery'
       preLoaderRoute: typeof MiaMilleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/historico': {
+      id: '/historico'
+      path: '/historico'
+      fullPath: '/historico'
+      preLoaderRoute: typeof HistoricoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fisioterapeuta': {
@@ -180,6 +200,7 @@ const rootRouteChildren: RootRouteChildren = {
   AvisoLegalRoute: AvisoLegalRoute,
   ContactoRoute: ContactoRoute,
   FisioterapeutaRoute: FisioterapeutaRoute,
+  HistoricoRoute: HistoricoRoute,
   MiaMilleryRoute: MiaMilleryRoute,
   PoliticaDeCookiesRoute: PoliticaDeCookiesRoute,
   PoliticaDePrivacidadRoute: PoliticaDePrivacidadRoute,

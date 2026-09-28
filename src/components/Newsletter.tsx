@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "@tanstack/react-router";
 
 type Props = {
   variant?: "light" | "garnet";
@@ -71,6 +72,12 @@ export function Newsletter({ variant = "light" }: Props) {
               Y de vez en cuando, algún apunte sobre mis novelas — porque
               escribir también es parte de cómo entiendo el cuerpo y la mente.
             </p>
+            <Link
+              to="/historico"
+              className="inline-block border-b border-primary pb-0.5 text-xs font-medium uppercase tracking-widest text-primary transition-opacity hover:opacity-80"
+            >
+              Ver números anteriores →
+            </Link>
           </div>
         </div>
         {status === "ok" ? (
